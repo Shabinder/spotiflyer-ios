@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		190A4F7A263336F8001B4D96 /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190A4F79263336F8001B4D96 /* NavigationBarModifier.swift */; };
+		190A4F8226334D11001B4D96 /* HistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190A4F8126334D11001B4D96 /* HistoryItem.swift */; };
 		1938BC18261F9305001E2952 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1938BC17261F9305001E2952 /* ListItem.swift */; };
 		197DE3D12632B70A007F7B32 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197DE3D02632B70A007F7B32 /* MainScreen.swift */; };
 		197DE3DD2632BDF6007F7B32 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197DE3DC2632BDF6007F7B32 /* SearchBar.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		190A4F79263336F8001B4D96 /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
+		190A4F8126334D11001B4D96 /* HistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryItem.swift; sourceTree = "<group>"; };
 		1938BC17261F9305001E2952 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
 		197DE3D02632B70A007F7B32 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		197DE3DC2632BDF6007F7B32 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				19FE36B52632E27800D25B5E /* HistoryColumn.swift */,
 				19FE36BD2632EBB300D25B5E /* LogoButton.swift */,
 				19FE36C72632F0B200D25B5E /* ActionButton.swift */,
+				190A4F8126334D11001B4D96 /* HistoryItem.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				19FE36C32632EF2500D25B5E /* Extensions.swift in Sources */,
 				19FE36B62632E27800D25B5E /* HistoryColumn.swift in Sources */,
 				197DE3D12632B70A007F7B32 /* MainScreen.swift in Sources */,
+				190A4F8226334D11001B4D96 /* HistoryItem.swift in Sources */,
 				1938BC18261F9305001E2952 /* ListItem.swift in Sources */,
 				197DE3DD2632BDF6007F7B32 /* SearchBar.swift in Sources */,
 				19FE36B12632E26500D25B5E /* AboutColumn.swift in Sources */,

@@ -9,11 +9,13 @@ import SwiftUI
 
 struct HistoryColumn: View {
     var body: some View {
-        ScrollView(.vertical, showsIndicators: false){
-            GroupBox(label: Text("History"), content: {
-                    
-            })
-        }
+        List {
+            ForEach(0..<6) { _ in
+                HistoryItem(imagePath: "logo", title: "Playlist Name", type: "Playlist", trackCount: 100, action: {})
+                    .listRowInsets(EdgeInsets())
+                    .padding(.vertical,8)
+            }
+         }
     }
 }
 

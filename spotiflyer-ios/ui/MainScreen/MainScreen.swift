@@ -53,7 +53,6 @@ struct MainScreen: View {
             )
         } // NavigationView
     }
-    
 }
 
 struct MainScreen_Previews: PreviewProvider {
