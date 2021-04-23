@@ -10,7 +10,7 @@ import SwiftUI
 struct AboutColumn: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false){
-            VStack(spacing:18) {
+            VStack(spacing:16) {
                 GroupBox(
                     label: Text("Supported Platforms")
                         .foregroundColor(Color("AccentColor"))

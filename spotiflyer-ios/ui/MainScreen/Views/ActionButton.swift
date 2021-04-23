@@ -65,5 +65,6 @@ struct ActionButton_Previews: PreviewProvider {
         ActionButton(sysImage: "flag.badge.ellipsis", title: "Github", subtitle: "Star / Fork the project on Github") {
             // Action
         }
+        .previewLayout(.sizeThatFits)
     }
 }
