@@ -1,0 +1,6 @@
+framework module Pods_spotiflyer_ios_spotiflyer_iosUITests {
+  umbrella header "Pods-spotiflyer-ios-spotiflyer-iosUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

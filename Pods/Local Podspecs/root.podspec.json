@@ -1,0 +1,36 @@
+{
+  "name": "root",
+  "version": "1.0",
+  "homepage": "https://github.com/Shabinder/SpotiFlyer",
+  "source": {
+    "git": "Not Published",
+    "tag": "Cocoapods/root/1.0"
+  },
+  "authors": "Shabinder Singh",
+  "license": "",
+  "summary": "SpotiFlyer Native Module",
+  "static_framework": true,
+  "vendored_frameworks": "build/cocoapods/framework/SpotiFlyer.framework",
+  "libraries": "c++",
+  "module_name": "root_umbrella",
+  "platforms": {
+    "ios": "11.0"
+  },
+  "pod_target_xcconfig": {
+    "KOTLIN_TARGET[sdk=iphonesimulator*]": "ios_x64",
+    "KOTLIN_TARGET[sdk=iphoneos*]": "ios_arm",
+    "KOTLIN_TARGET[sdk=watchsimulator*]": "watchos_x64",
+    "KOTLIN_TARGET[sdk=watchos*]": "watchos_arm",
+    "KOTLIN_TARGET[sdk=appletvsimulator*]": "tvos_x64",
+    "KOTLIN_TARGET[sdk=appletvos*]": "tvos_arm64",
+    "KOTLIN_TARGET[sdk=macosx*]": "macos_x64"
+  },
+  "script_phases": [
+    {
+      "name": "Build root",
+      "execution_position": "before_compile",
+      "shell_path": "/bin/sh",
+      "script": "                set -ev\n                REPO_ROOT=\"$PODS_TARGET_SRCROOT\"\n                \"$REPO_ROOT/../../gradlew\" -p \"$REPO_ROOT\" :common:root:syncFramework                     -Pkotlin.native.cocoapods.target=$KOTLIN_TARGET                     -Pkotlin.native.cocoapods.configuration=$CONFIGURATION                     -Pkotlin.native.cocoapods.cflags=\"$OTHER_CFLAGS\"                     -Pkotlin.native.cocoapods.paths.headers=\"$HEADER_SEARCH_PATHS\"                     -Pkotlin.native.cocoapods.paths.frameworks=\"$FRAMEWORK_SEARCH_PATHS\"\n"
+    }
+  ]
+}
