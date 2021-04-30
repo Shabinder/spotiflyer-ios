@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import SpotiFlyer
 
 public extension View {
     func expand() -> some View {

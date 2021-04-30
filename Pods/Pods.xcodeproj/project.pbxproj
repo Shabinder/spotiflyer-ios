@@ -6,52 +6,25 @@
 	objectVersion = 50;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		87CC28B7921E9B6A9461F7763ECC727F /* root */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 2C44828432D3B098BDA92EEEB3E8356D /* Build configuration list for PBXAggregateTarget "root" */;
-			buildPhases = (
-				A22C952AF00D28556CB2F8BB76FE9EAE /* [CP-User] Build root */,
-			);
-			dependencies = (
-			);
-			name = root;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		1A51E899946969E99AC892C3BF6DD482 /* Pods-spotiflyer-iosTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31F73717B7C83535782C24F65169C21A /* Pods-spotiflyer-iosTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		47B6F812965BA1AD733202A7DA6A713F /* Pods-spotiflyer-ios-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B8646E5C57CC636DADE5FC6F25D1979 /* Pods-spotiflyer-ios-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B2EF13169812CC8BC9A97781FC3926E /* Pods-spotiflyer-ios-spotiflyer-iosUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A0962D52213C8D8383BD3ACD5745A5 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-dummy.m */; };
+		4CEA370B23F83F0A7D1115489A0C6E1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		6CFCA0CBD63A9232B9469B9B547C7411 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		8B0E98E4A04E7A0D2F447829E3E11D16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		CAD27F19D961906F8881EF59343F9DB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		741E794B9A17867CE58F7DB8422F012C /* Pods-spotiflyer-ios-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1937DBBE63A71FD88F49C8FF00883073 /* Pods-spotiflyer-ios-dummy.m */; };
+		79D5C2FE46A602332F31CFBC3FEA7FB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C4DC71FC53ECBB27CDC26A4E1662A29A /* Pods-spotiflyer-ios-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B8646E5C57CC636DADE5FC6F25D1979 /* Pods-spotiflyer-ios-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5977F93610078B3DA385B4ECF9922A4 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5569007849BE36265A92A7BA08017E5D /* Pods-spotiflyer-ios-spotiflyer-iosUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CDD0ACEB896D25245DB4B08C93406B56 /* Pods-spotiflyer-iosTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F04369722DF477FAA285EB7453DD59 /* Pods-spotiflyer-iosTests-dummy.m */; };
-		F6A83A38D12B51D41D61725600F518FF /* Pods-spotiflyer-ios-spotiflyer-iosUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5569007849BE36265A92A7BA08017E5D /* Pods-spotiflyer-ios-spotiflyer-iosUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FED4415057AD7B8AFCF0409B7ECB6CAC /* Pods-spotiflyer-ios-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1937DBBE63A71FD88F49C8FF00883073 /* Pods-spotiflyer-ios-dummy.m */; };
+		E43371C24688791D637AB54812DE5030 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A0962D52213C8D8383BD3ACD5745A5 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AF9C06DD26C0BF205A65CDE94512C9B2 /* PBXContainerItemProxy */ = {
+		ED3703FC1A65BDE8EEC5D9B1112E391F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 44FB1BB20ADE3A532938636DCF43BD97;
 			remoteInfo = "Pods-spotiflyer-ios";
-		};
-		B9103F247B3992429645C67C6D3D4E9D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 87CC28B7921E9B6A9461F7763ECC727F;
-			remoteInfo = root;
-		};
-		E057C21E7E85CBD3D0E23661F8B6F583 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 87CC28B7921E9B6A9461F7763ECC727F;
-			remoteInfo = root;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -67,7 +40,6 @@
 		3B8646E5C57CC636DADE5FC6F25D1979 /* Pods-spotiflyer-ios-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-spotiflyer-ios-umbrella.h"; sourceTree = "<group>"; };
 		46B67514EEA2EB5FC998819433B58BCC /* Pods-spotiflyer-ios-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-spotiflyer-ios-acknowledgements.plist"; sourceTree = "<group>"; };
 		474FAA1FB7C23C8E218E74ADA7196ACD /* Pods-spotiflyer-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spotiflyer-ios.release.xcconfig"; sourceTree = "<group>"; };
-		4B9F73AA4ECF2B219C1A51C5E4352085 /* root.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = root.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5569007849BE36265A92A7BA08017E5D /* Pods-spotiflyer-ios-spotiflyer-iosUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests-umbrella.h"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7A7A9C752DE5024E4985949632A1974E /* Pods-spotiflyer-ios-spotiflyer-iosUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests.modulemap"; sourceTree = "<group>"; };
@@ -76,27 +48,32 @@
 		90F04369722DF477FAA285EB7453DD59 /* Pods-spotiflyer-iosTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-spotiflyer-iosTests-dummy.m"; sourceTree = "<group>"; };
 		91D13547F513CF7539B70DE0D0449BA0 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9705BBAD6EDDA41BCE5F7B09AE0D5962 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests-Info.plist"; sourceTree = "<group>"; };
-		980A02A99C49E350223FF775EAD395D0 /* root.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = root.release.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B1234849CE619123773BED8E2E56F177 /* Pods-spotiflyer-ios-spotiflyer-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B377F139BF53F776F4B3551E4C0A75F7 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B3A0962D52213C8D8383BD3ACD5745A5 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests-dummy.m"; sourceTree = "<group>"; };
-		C55DB122A500AEFE3E46C8E7C652B9B2 /* SpotiFlyer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpotiFlyer.framework; path = build/cocoapods/framework/SpotiFlyer.framework; sourceTree = "<group>"; };
 		C58008CEE68F91FDE9DD87640CDD4D22 /* Pods-spotiflyer-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spotiflyer-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		E0B33C2C789D925E953E60136DB57E81 /* Pods_spotiflyer_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_spotiflyer_iosTests.framework; path = "Pods-spotiflyer-iosTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A9000DED8EB285C8FDC6404A52AC54 /* Pods_spotiflyer_ios_spotiflyer_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_spotiflyer_ios_spotiflyer_iosUITests.framework; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E772DD234DC17EB044E9966B010793F0 /* Pods-spotiflyer-ios-spotiflyer-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EBA0FC9E5033FC5DB93018DBA4733FD0 /* Pods-spotiflyer-ios.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-spotiflyer-ios.modulemap"; sourceTree = "<group>"; };
-		F38268031E1A0D3A96D76266466789D5 /* root.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = root.debug.xcconfig; sourceTree = "<group>"; };
 		FD79E15609D5B02D1F6EECF3F78F72C8 /* Pods-spotiflyer-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spotiflyer-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		23109924CB94A0C8E25F83566822E4B4 /* Frameworks */ = {
+		56CF75577E4292BEE9FA04A2FB562563 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAD27F19D961906F8881EF59343F9DB8 /* Foundation.framework in Frameworks */,
+				79D5C2FE46A602332F31CFBC3FEA7FB4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73B0926A085AA0E098730C6E3B780C2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CEA370B23F83F0A7D1115489A0C6E1F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,14 +82,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CFCA0CBD63A9232B9469B9B547C7411 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E51B69CB8A9CBA742190A8927F1BE74D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8B0E98E4A04E7A0D2F447829E3E11D16 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,17 +122,6 @@
 			path = "Target Support Files/Pods-spotiflyer-iosTests";
 			sourceTree = "<group>";
 		};
-		9983B3C05981D31C0E4F3759B8A7EC17 /* root */ = {
-			isa = PBXGroup;
-			children = (
-				F2BD83A35B103A433C40E37419099950 /* Frameworks */,
-				D32C0376B1A6F0868B7F55F9B0EC2AA9 /* Pod */,
-				E91CD0E7345D4E1E19F3AD35CCA334D0 /* Support Files */,
-			);
-			name = root;
-			path = ../../common/root;
-			sourceTree = "<group>";
-		};
 		ACE4E8789D1C284CCA1AC91F27CE4314 /* Pods-spotiflyer-ios-spotiflyer-iosUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,14 +136,6 @@
 			);
 			name = "Pods-spotiflyer-ios-spotiflyer-iosUITests";
 			path = "Target Support Files/Pods-spotiflyer-ios-spotiflyer-iosUITests";
-			sourceTree = "<group>";
-		};
-		B49DF4D69CB8809B393E99D36F2F65B0 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9983B3C05981D31C0E4F3759B8A7EC17 /* root */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		CC6F274F9D5D0D20827E075A29CB4753 /* Pods-spotiflyer-ios */ = {
@@ -208,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				B49DF4D69CB8809B393E99D36F2F65B0 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				E372EEB5925DC4CFA83026D34B51CB23 /* Products */,
 				55A90DBEB237009AC77B62215EDBCEB8 /* Targets Support Files */,
@@ -223,14 +172,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D32C0376B1A6F0868B7F55F9B0EC2AA9 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				4B9F73AA4ECF2B219C1A51C5E4352085 /* root.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		E372EEB5925DC4CFA83026D34B51CB23 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,40 +182,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E91CD0E7345D4E1E19F3AD35CCA334D0 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F38268031E1A0D3A96D76266466789D5 /* root.debug.xcconfig */,
-				980A02A99C49E350223FF775EAD395D0 /* root.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../../spotiflyer-ios/Pods/Target Support Files/root";
-			sourceTree = "<group>";
-		};
-		F2BD83A35B103A433C40E37419099950 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C55DB122A500AEFE3E46C8E7C652B9B2 /* SpotiFlyer.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4F2B081618E568D1E1E9778C32FF6E49 /* Headers */ = {
+		07F78CB2B293AE4D3B47BC1294D7D760 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6A83A38D12B51D41D61725600F518FF /* Pods-spotiflyer-ios-spotiflyer-iosUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5847FC0A1CA03D106CDE6E23D3FDF44B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				47B6F812965BA1AD733202A7DA6A713F /* Pods-spotiflyer-ios-umbrella.h in Headers */,
+				C5977F93610078B3DA385B4ECF9922A4 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +198,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A51E899946969E99AC892C3BF6DD482 /* Pods-spotiflyer-iosTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDD8CCA25BEE3F68FFCAC10A3DCFEFDD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4DC71FC53ECBB27CDC26A4E1662A29A /* Pods-spotiflyer-ios-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +224,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				54F9524F767F48B6355B61E58D5185E2 /* PBXTargetDependency */,
+				65876381B457CC6974D10D473377B314 /* PBXTargetDependency */,
 			);
 			name = "Pods-spotiflyer-iosTests";
 			productName = "Pods-spotiflyer-iosTests";
@@ -310,17 +233,16 @@
 		};
 		44FB1BB20ADE3A532938636DCF43BD97 /* Pods-spotiflyer-ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 738A21ED7D0227F66B9D2C6F7F71B837 /* Build configuration list for PBXNativeTarget "Pods-spotiflyer-ios" */;
+			buildConfigurationList = 82F0106C3AB66AC9010514D3949D53ED /* Build configuration list for PBXNativeTarget "Pods-spotiflyer-ios" */;
 			buildPhases = (
-				5847FC0A1CA03D106CDE6E23D3FDF44B /* Headers */,
-				2BBD3B09380FA573F204A73D57DDE6E0 /* Sources */,
-				E51B69CB8A9CBA742190A8927F1BE74D /* Frameworks */,
-				ACDDC612B588C6473A39BB3845EA3B8F /* Resources */,
+				FDD8CCA25BEE3F68FFCAC10A3DCFEFDD /* Headers */,
+				57D32E4D058203D8F1F9B13247130524 /* Sources */,
+				73B0926A085AA0E098730C6E3B780C2B /* Frameworks */,
+				A767558AEBEB32047A598D5F3C01510F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CF3E91198FBDFA770957E6ACC1DAB65E /* PBXTargetDependency */,
 			);
 			name = "Pods-spotiflyer-ios";
 			productName = "Pods-spotiflyer-ios";
@@ -329,17 +251,16 @@
 		};
 		D7E9DE2209AD05DC2B7E7D3D1EF67E2F /* Pods-spotiflyer-ios-spotiflyer-iosUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 77E69BF2AA811122FD3CF48BAC9633C0 /* Build configuration list for PBXNativeTarget "Pods-spotiflyer-ios-spotiflyer-iosUITests" */;
+			buildConfigurationList = A227C99641C7EE4208CE417AAAA598C5 /* Build configuration list for PBXNativeTarget "Pods-spotiflyer-ios-spotiflyer-iosUITests" */;
 			buildPhases = (
-				4F2B081618E568D1E1E9778C32FF6E49 /* Headers */,
-				4E495E85BC4AD4362C374A897029B58F /* Sources */,
-				23109924CB94A0C8E25F83566822E4B4 /* Frameworks */,
-				8139C12DB8A68A9AD69E42834A51079C /* Resources */,
+				07F78CB2B293AE4D3B47BC1294D7D760 /* Headers */,
+				D2DDB41B288ED4AD47BF02BFBB717003 /* Sources */,
+				56CF75577E4292BEE9FA04A2FB562563 /* Frameworks */,
+				9BFA3D4D77DFAE8DFBB0B29A02178E33 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				06EC3F398825C59C8603DF19160A5ABB /* PBXTargetDependency */,
 			);
 			name = "Pods-spotiflyer-ios-spotiflyer-iosUITests";
 			productName = "Pods-spotiflyer-ios-spotiflyer-iosUITests";
@@ -371,20 +292,19 @@
 				44FB1BB20ADE3A532938636DCF43BD97 /* Pods-spotiflyer-ios */,
 				D7E9DE2209AD05DC2B7E7D3D1EF67E2F /* Pods-spotiflyer-ios-spotiflyer-iosUITests */,
 				09F8BE3DD077D072FD1C54726E1350DE /* Pods-spotiflyer-iosTests */,
-				87CC28B7921E9B6A9461F7763ECC727F /* root */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8139C12DB8A68A9AD69E42834A51079C /* Resources */ = {
+		9BFA3D4D77DFAE8DFBB0B29A02178E33 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ACDDC612B588C6473A39BB3845EA3B8F /* Resources */ = {
+		A767558AEBEB32047A598D5F3C01510F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -400,28 +320,7 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		A22C952AF00D28556CB2F8BB76FE9EAE /* [CP-User] Build root */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "[CP-User] Build root";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "                set -ev\n                REPO_ROOT=\"$PODS_TARGET_SRCROOT\"\n                \"$REPO_ROOT/../../gradlew\" -p \"$REPO_ROOT\" :common:root:syncFramework                     -Pkotlin.native.cocoapods.target=$KOTLIN_TARGET                     -Pkotlin.native.cocoapods.configuration=$CONFIGURATION                     -Pkotlin.native.cocoapods.cflags=\"$OTHER_CFLAGS\"                     -Pkotlin.native.cocoapods.paths.headers=\"$HEADER_SEARCH_PATHS\"                     -Pkotlin.native.cocoapods.paths.frameworks=\"$FRAMEWORK_SEARCH_PATHS\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		2BBD3B09380FA573F204A73D57DDE6E0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FED4415057AD7B8AFCF0409B7ECB6CAC /* Pods-spotiflyer-ios-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		35201B060EFAECF8F5148D0D5BC971D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -430,34 +329,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4E495E85BC4AD4362C374A897029B58F /* Sources */ = {
+		57D32E4D058203D8F1F9B13247130524 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B2EF13169812CC8BC9A97781FC3926E /* Pods-spotiflyer-ios-spotiflyer-iosUITests-dummy.m in Sources */,
+				741E794B9A17867CE58F7DB8422F012C /* Pods-spotiflyer-ios-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2DDB41B288ED4AD47BF02BFBB717003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E43371C24688791D637AB54812DE5030 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		06EC3F398825C59C8603DF19160A5ABB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = root;
-			target = 87CC28B7921E9B6A9461F7763ECC727F /* root */;
-			targetProxy = E057C21E7E85CBD3D0E23661F8B6F583 /* PBXContainerItemProxy */;
-		};
-		54F9524F767F48B6355B61E58D5185E2 /* PBXTargetDependency */ = {
+		65876381B457CC6974D10D473377B314 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-spotiflyer-ios";
 			target = 44FB1BB20ADE3A532938636DCF43BD97 /* Pods-spotiflyer-ios */;
-			targetProxy = AF9C06DD26C0BF205A65CDE94512C9B2 /* PBXContainerItemProxy */;
-		};
-		CF3E91198FBDFA770957E6ACC1DAB65E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = root;
-			target = 87CC28B7921E9B6A9461F7763ECC727F /* root */;
-			targetProxy = B9103F247B3992429645C67C6D3D4E9D /* PBXContainerItemProxy */;
+			targetProxy = ED3703FC1A65BDE8EEC5D9B1112E391F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -528,27 +423,9 @@
 			};
 			name = Debug;
 		};
-		2AB023CBBAADF8D537AEAAE7E5C10DF9 /* Release */ = {
+		2B1077C686A789EEB2BC947C55BD70AE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 980A02A99C49E350223FF775EAD395D0 /* root.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		2B54B8A85195253F2C5FB2ECF9CD8880 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 378605E67C7740F60EEFB5371DB0F390 /* Pods-spotiflyer-ios.debug.xcconfig */;
+			baseConfigurationReference = B1234849CE619123773BED8E2E56F177 /* Pods-spotiflyer-ios-spotiflyer-iosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -559,7 +436,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-spotiflyer-ios/Pods-spotiflyer-ios-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-spotiflyer-ios-spotiflyer-iosUITests/Pods-spotiflyer-ios-spotiflyer-iosUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -568,7 +445,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-spotiflyer-ios/Pods-spotiflyer-ios.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-spotiflyer-ios-spotiflyer-iosUITests/Pods-spotiflyer-ios-spotiflyer-iosUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -579,23 +456,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		317FE1EFDAA1F77E661A29CD471F5E48 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F38268031E1A0D3A96D76266466789D5 /* root.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -635,7 +495,44 @@
 			};
 			name = Debug;
 		};
-		9A09C87318512AC372838F12F8FBA293 /* Release */ = {
+		9BB9C3BFECA486C601B884493F237916 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 474FAA1FB7C23C8E218E74ADA7196ACD /* Pods-spotiflyer-ios.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-spotiflyer-ios/Pods-spotiflyer-ios-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-spotiflyer-ios/Pods-spotiflyer-ios.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9DF11D421EFF1C3772C215EEBB9E5520 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E772DD234DC17EB044E9966B010793F0 /* Pods-spotiflyer-ios-spotiflyer-iosUITests.release.xcconfig */;
 			buildSettings = {
@@ -771,45 +668,9 @@
 			};
 			name = Release;
 		};
-		DE934ECD927A23216125614801E172B3 /* Debug */ = {
+		E1C2DE5B3B1D9EC5ABA7F11434ED281A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1234849CE619123773BED8E2E56F177 /* Pods-spotiflyer-ios-spotiflyer-iosUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-spotiflyer-ios-spotiflyer-iosUITests/Pods-spotiflyer-ios-spotiflyer-iosUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-spotiflyer-ios-spotiflyer-iosUITests/Pods-spotiflyer-ios-spotiflyer-iosUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FCB0B0B7857CB661EC5C73A1F02221FC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 474FAA1FB7C23C8E218E74ADA7196ACD /* Pods-spotiflyer-ios.release.xcconfig */;
+			baseConfigurationReference = 378605E67C7740F60EEFB5371DB0F390 /* Pods-spotiflyer-ios.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -838,24 +699,14 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C44828432D3B098BDA92EEEB3E8356D /* Build configuration list for PBXAggregateTarget "root" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				317FE1EFDAA1F77E661A29CD471F5E48 /* Debug */,
-				2AB023CBBAADF8D537AEAAE7E5C10DF9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -874,20 +725,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		738A21ED7D0227F66B9D2C6F7F71B837 /* Build configuration list for PBXNativeTarget "Pods-spotiflyer-ios" */ = {
+		82F0106C3AB66AC9010514D3949D53ED /* Build configuration list for PBXNativeTarget "Pods-spotiflyer-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2B54B8A85195253F2C5FB2ECF9CD8880 /* Debug */,
-				FCB0B0B7857CB661EC5C73A1F02221FC /* Release */,
+				E1C2DE5B3B1D9EC5ABA7F11434ED281A /* Debug */,
+				9BB9C3BFECA486C601B884493F237916 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		77E69BF2AA811122FD3CF48BAC9633C0 /* Build configuration list for PBXNativeTarget "Pods-spotiflyer-ios-spotiflyer-iosUITests" */ = {
+		A227C99641C7EE4208CE417AAAA598C5 /* Build configuration list for PBXNativeTarget "Pods-spotiflyer-ios-spotiflyer-iosUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DE934ECD927A23216125614801E172B3 /* Debug */,
-				9A09C87318512AC372838F12F8FBA293 /* Release */,
+				2B1077C686A789EEB2BC947C55BD70AE /* Debug */,
+				9DF11D421EFF1C3772C215EEBB9E5520 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

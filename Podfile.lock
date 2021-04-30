@@ -1,16 +1,3 @@
-PODS:
-  - root (1.0)
-
-DEPENDENCIES:
-  - root (from `../common/root`)
-
-EXTERNAL SOURCES:
-  root:
-    :path: "../common/root"
-
-SPEC CHECKSUMS:
-  root: 688b0886e63b04ed261ec730d44e0f72df67c79e
-
-PODFILE CHECKSUM: 29726b32dfc48aa26a0de77ad00e49d475bfe307
+PODFILE CHECKSUM: 83a14660f03dc27d8adab565d2ced597ac9036f8
 
 COCOAPODS: 1.10.1

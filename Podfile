@@ -6,7 +6,8 @@ target 'spotiflyer-ios' do
   use_frameworks!
 
   # Pods for spotiflyer-ios
-  pod 'root', :path => '../common/root'
+  #pod 'root', :path => '../common/root'
+
 
   target 'spotiflyer-iosTests' do
     inherit! :search_paths
