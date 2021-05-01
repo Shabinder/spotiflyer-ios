@@ -34,7 +34,7 @@
 		1BA39147D29C7CFEB231445F03C03D12 /* Pods-spotiflyer-ios-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-spotiflyer-ios-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1EE27B7CA96CE812BC6B6E16CE4D96EA /* Pods-spotiflyer-iosTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-spotiflyer-iosTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		2786FD6931974AF8B1D56BD1AB819C3D /* Pods-spotiflyer-iosTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-spotiflyer-iosTests.modulemap"; sourceTree = "<group>"; };
-		30902683E67F55EF56FC7DE649140C2F /* Pods_spotiflyer_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_spotiflyer_ios.framework; path = "Pods-spotiflyer-ios.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30902683E67F55EF56FC7DE649140C2F /* Pods_spotiflyer_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spotiflyer_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31F73717B7C83535782C24F65169C21A /* Pods-spotiflyer-iosTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-spotiflyer-iosTests-umbrella.h"; sourceTree = "<group>"; };
 		378605E67C7740F60EEFB5371DB0F390 /* Pods-spotiflyer-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spotiflyer-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		3B8646E5C57CC636DADE5FC6F25D1979 /* Pods-spotiflyer-ios-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-spotiflyer-ios-umbrella.h"; sourceTree = "<group>"; };
@@ -48,13 +48,13 @@
 		90F04369722DF477FAA285EB7453DD59 /* Pods-spotiflyer-iosTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-spotiflyer-iosTests-dummy.m"; sourceTree = "<group>"; };
 		91D13547F513CF7539B70DE0D0449BA0 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9705BBAD6EDDA41BCE5F7B09AE0D5962 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B1234849CE619123773BED8E2E56F177 /* Pods-spotiflyer-ios-spotiflyer-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B377F139BF53F776F4B3551E4C0A75F7 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B3A0962D52213C8D8383BD3ACD5745A5 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests-dummy.m"; sourceTree = "<group>"; };
 		C58008CEE68F91FDE9DD87640CDD4D22 /* Pods-spotiflyer-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spotiflyer-iosTests.release.xcconfig"; sourceTree = "<group>"; };
-		E0B33C2C789D925E953E60136DB57E81 /* Pods_spotiflyer_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_spotiflyer_iosTests.framework; path = "Pods-spotiflyer-iosTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2A9000DED8EB285C8FDC6404A52AC54 /* Pods_spotiflyer_ios_spotiflyer_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_spotiflyer_ios_spotiflyer_iosUITests.framework; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0B33C2C789D925E953E60136DB57E81 /* Pods_spotiflyer_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spotiflyer_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2A9000DED8EB285C8FDC6404A52AC54 /* Pods_spotiflyer_ios_spotiflyer_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spotiflyer_ios_spotiflyer_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E772DD234DC17EB044E9966B010793F0 /* Pods-spotiflyer-ios-spotiflyer-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EBA0FC9E5033FC5DB93018DBA4733FD0 /* Pods-spotiflyer-ios.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-spotiflyer-ios.modulemap"; sourceTree = "<group>"; };
 		FD79E15609D5B02D1F6EECF3F78F72C8 /* Pods-spotiflyer-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spotiflyer-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -274,7 +274,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -410,7 +410,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -438,7 +438,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-spotiflyer-ios-spotiflyer-iosUITests/Pods-spotiflyer-ios-spotiflyer-iosUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -474,7 +474,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-spotiflyer-iosTests/Pods-spotiflyer-iosTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -510,7 +510,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-spotiflyer-ios/Pods-spotiflyer-ios-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -547,7 +547,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-spotiflyer-ios-spotiflyer-iosUITests/Pods-spotiflyer-ios-spotiflyer-iosUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -584,7 +584,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-spotiflyer-iosTests/Pods-spotiflyer-iosTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -656,7 +656,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -683,7 +683,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-spotiflyer-ios/Pods-spotiflyer-ios-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

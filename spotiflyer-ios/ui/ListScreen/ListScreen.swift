@@ -64,6 +64,7 @@ extension TrackDetails: Identifiable {}
 struct ListScreen_Previews: PreviewProvider {
     static var previews: some View {
         ListScreen(StubSpotiFlyerList())
+            .previewDevice("iPhone 12")
     }
 
     class StubSpotiFlyerList: SpotiFlyerList {

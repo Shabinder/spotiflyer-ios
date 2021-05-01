@@ -8,6 +8,6 @@
 import Foundation
 
 func printPath(){
-    let parent = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+    var parent = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
     parent.appendPathComponent("")
 }

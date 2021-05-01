@@ -21,7 +21,6 @@
 		193BB306263424BF006C0BD6 /* FileManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193BB305263424BF006C0BD6 /* FileManagement.swift */; };
 		197DE3D12632B70A007F7B32 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197DE3D02632B70A007F7B32 /* MainScreen.swift */; };
 		197DE3DD2632BDF6007F7B32 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197DE3DC2632BDF6007F7B32 /* SearchBar.swift */; };
-		19C8C557261662D0003181FC /* spotiflyer_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C8C556261662D0003181FC /* spotiflyer_iosApp.swift */; };
 		19C8C559261662D0003181FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C8C558261662D0003181FC /* ContentView.swift */; };
 		19C8C55B261662D2003181FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19C8C55A261662D2003181FC /* Assets.xcassets */; };
 		19C8C55E261662D2003181FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19C8C55D261662D2003181FC /* Preview Assets.xcassets */; };
@@ -87,7 +86,6 @@
 		197DE3D02632B70A007F7B32 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		197DE3DC2632BDF6007F7B32 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		19C8C553261662D0003181FC /* spotiflyer-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spotiflyer-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		19C8C556261662D0003181FC /* spotiflyer_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spotiflyer_iosApp.swift; sourceTree = "<group>"; };
 		19C8C558261662D0003181FC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		19C8C55A261662D2003181FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19C8C55D261662D2003181FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -162,7 +160,6 @@
 		1938BC16261F92EE001E2952 /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				19C8C556261662D0003181FC /* spotiflyer_iosApp.swift */,
 				19C8C558261662D0003181FC /* ContentView.swift */,
 				197DE3CF2632B6D2007F7B32 /* MainScreen */,
 				197DE3CE2632B6AE007F7B32 /* ListScreen */,
@@ -305,7 +302,6 @@
 			buildConfigurationList = 19C8C578261662D2003181FC /* Build configuration list for PBXNativeTarget "spotiflyer-ios" */;
 			buildPhases = (
 				AFA695E92295F939EA591E0E /* [CP] Check Pods Manifest.lock */,
-				19064FFD263C215E00AD382C /* ShellScript */,
 				19C8C54F261662D0003181FC /* Sources */,
 				19C8C550261662D0003181FC /* Frameworks */,
 				19C8C551261662D0003181FC /* Resources */,
@@ -427,23 +423,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		19064FFD263C215E00AD382C /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "cd \"$SRCROOT/..\"\n./gradlew :common:root:packForXcode -PXCODE_CONFIGURATION=${CONFIGURATION}\n";
-		};
 		4B6335F49FA300D5A1EA9CD7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -533,7 +512,6 @@
 				1906501F263C3C5500AD382C /* MutableStateBuilder.swift in Sources */,
 				1906500D263C38B400AD382C /* ObservableValue.swift in Sources */,
 				19C8C559261662D0003181FC /* ContentView.swift in Sources */,
-				19C8C557261662D0003181FC /* spotiflyer_iosApp.swift in Sources */,
 				19FE36C82632F0B200D25B5E /* ActionButton.swift in Sources */,
 				86AAA1F53B342E56EFE1C659 /* AppDelegate.swift in Sources */,
 				19065035263C9DA200AD382C /* LoadingAnim.swift in Sources */,

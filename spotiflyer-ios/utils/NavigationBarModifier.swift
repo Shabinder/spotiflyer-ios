@@ -62,7 +62,7 @@ extension View {
 struct NavBarModifier_Preview: PreviewProvider {
     static var previews: some View {
         Group {
-            MainScreen()
+            MainScreen(MainScreen_Previews.StubSpotiFlyerMain())
                 .previewDevice("iPhone 12")
         }
     }
