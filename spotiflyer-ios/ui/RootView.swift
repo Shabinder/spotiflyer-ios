@@ -19,10 +19,6 @@ struct RootView: View {
         self.callBacks = component.callBacks
     }
 
-//    private func spotiFlyerRoot(componentContext: ComponentContext)->SpotiFlyerRoot {
-//        return SpotiFlyerRootKt.SpotiFlyerRoot(componentContext: componentContext, dependencies: RootDependencies())
-//    }
-
         var body: some View {
         
         let child = self.routerStates.value.activeChild.instance

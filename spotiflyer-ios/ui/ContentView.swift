@@ -71,7 +71,9 @@ struct ContentView: View {
     
     var body: some View {
         RootView(componentHolder.component)
-            .onAppear { LifecycleRegistryExtKt.resume(self.componentHolder.lifecycle) }
+            .onAppear { LifecycleRegistryExtKt.resume(self.componentHolder.lifecycle)
+                print(AppDelegate.deps.dir.defaultDir())
+            }
             .onDisappear { LifecycleRegistryExtKt.stop(self.componentHolder.lifecycle) }
     }// Body
 }
