@@ -20,64 +20,114 @@ struct ListScreen: View {
         self.models = ObservableValue(component.models)
     }
 
-    @State var coverImage: UIImage = UIImage.init(named: "placeholder")!
+    @State var coverImage: UIImage = UIImage.init(named: "logo")!
 
     var body: some View {
         let model = models.value
-        let data = model.queryResult
 
-        ZStack {
-            if let result = data {
-                VStack(alignment: .center,spacing: 12) {
-                    Image(uiImage: coverImage)
-                            .frame(width: 190, height: 210, alignment: .center)
-                            .cornerRadius(12.0)
-                            .padding()
-                            .onAppear {
-                                component.loadImage(url: result.coverUrl) { picture, error in
-                                    if let pic = picture?.image {
-                                        coverImage =  pic
+        
+        if let result = model.queryResult {
+            VStack(alignment: .center,spacing: 12) {
+                List {
+                    ZStack(alignment: .topLeading) {
+                        HStack {
+                            Spacer()
+                            VStack {
+                                Image(uiImage: coverImage)
+                                    .resizable()
+                                    .frame(width: 160, height: 170, alignment: .center)
+                                    .cornerRadius(12.0)
+                                    .padding()
+                                    .onAppear {
+                                        component.loadImage(url: result.coverUrl) { picture, error in
+                                            if let pic = picture?.image {
+                                                coverImage =  pic
+                                            }
+                                        }
                                     }
-                                }
+                                // Cover - Image
+
+                                Text(result.title)
+                                        .font(.title2)
+                                        .lineLimit(2)
+                                        .multilineTextAlignment(.center)
+                                        .padding()
+                                // Name
                             }
-                    // Cover - Image
-
-                    Text(result.title)
-                            .font(.title2)
-                            .lineLimit(2)
-                            .multilineTextAlignment(.center)
-                            .padding()
-                    // Name
-
-                    List(result.trackList) { item in
+                            Spacer()
+                        }
+                        // Cover-Section
+                    
+                        Button(action: {
+                                withAnimation { component.onBackPressed() } }
+                        ) {
+                            HStack {
+                                Image(systemName: "chevron.left")
+                                Text("Close")
+                            }
+                        }
+                        .foregroundColor(Color("AccentColor"))
+                        .padding(.top,8)
+                        // Close Button
+                    }
+                    
+                    ForEach(result.trackList) { item in
                         ListItem(item: item, loadImage: component.loadImage)
+                            .listRowInsets(EdgeInsets())
                     }
                     // TrackList
                 }
-            } else {
+            }
+        } else {
+            ZStack {
+                Button(action: {
+                        withAnimation { component.onBackPressed() } }
+                ) {
+                    HStack {
+                        Image(systemName: "chevron.left")
+                        Text("Close")
+                    }
+                }
+                .padding()
+                .padding(.leading,8)
+                .expand()
+                
                 LoadingAnim()
             }
         }
     }
 }
+
+// Mock Data For Preview
+let array = Array(repeating: TrackDetails(title: "Song Name", artists: ["Shabinder","Shobit"], durationSec: 265, albumName: "", year: "", comment: "", lyrics: "", trackUrl: "", albumArtPath: "", albumArtURL: "", source: .spotify, progress: 0, downloaded: .NotDownloaded(), outputFilePath: "", videoID: ""), count: 10)
+
 extension TrackDetails: Identifiable {}
+
 struct ListScreen_Previews: PreviewProvider {
     static var previews: some View {
-        ListScreen(StubSpotiFlyerList())
+        // Initialised List Screen
+        ListScreen(StubSpotiFlyerList(isLoading: false))
+            .previewDevice("iPhone 12")
+        
+        // Loading List Screen
+        ListScreen(StubSpotiFlyerList(isLoading: true))
             .previewDevice("iPhone 12")
     }
-
+    
     class StubSpotiFlyerList: SpotiFlyerList {
-
-        var models: Value<SpotiFlyerListState> =
-                valueOf(
-                        SpotiFlyerListState(
-                                queryResult: nil,
-                                link: "",
-                                trackList: Array(repeating: TrackDetails(title: "Song Name", artists: ["Shabinder","Shobit"], durationSec: 265, albumName: "", year: "", comment: "", lyrics: "", trackUrl: "", albumArtPath: "", albumArtURL: "", source: .spotify, progress: 0, downloaded: .NotDownloaded(), outputFilePath: "", videoID: ""), count: 5),
-                                errorOccurred: nil
-                        )
-                )
+        
+        init(isLoading:Bool) {
+            models = valueOf(
+                    SpotiFlyerListState(
+                        queryResult: isLoading ? nil : PlatformQueryResult(folderType: "", subFolder: "", title: "Playlist Name", coverUrl: "logo", trackList: array, source: .spotify),
+                            link: "",
+                            trackList: array,
+                            errorOccurred: nil
+                    )
+            )
+        }
+        
+        let models: Value<SpotiFlyerListState>
 
         func loadImage(url: String, completionHandler: @escaping (Picture?, Error?) -> Void) {}
 

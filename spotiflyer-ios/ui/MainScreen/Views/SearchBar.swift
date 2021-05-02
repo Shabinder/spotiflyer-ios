@@ -29,7 +29,9 @@ struct SearchBar: View {
                 )
 
             
-            Button(" Search ", action: {})
+            Button(" Search ", action: {
+                self.onSearch(link)
+            })
                 .padding(8)
                 .font(.title3)
                 .foregroundColor(Color("PrimaryColor"))
@@ -38,7 +40,7 @@ struct SearchBar: View {
                 .background(RoundedRectangle(cornerRadius: 25.0)
                                 .foregroundColor(.black)
                                 .opacity(1)
-                ).onTapGesture{ withAnimation { self.onSearch(link) } }
+                )
                             
         }// VStack
     }

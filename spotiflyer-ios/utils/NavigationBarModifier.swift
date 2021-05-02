@@ -43,7 +43,7 @@ struct NavigationBarModifier: ViewModifier {
             VStack {
                 GeometryReader { geometry in
                     LinearGradient(gradient: Gradient(colors: [Color("PrimaryDarkColor").opacity(0.7), Color(.clear)]), startPoint: .top, endPoint: .bottom)
-                        .frame(height: geometry.size.height * 0.45)
+                        .frame(height: geometry.size.height * 0.4)
                         .edgesIgnoringSafeArea(.top)
                     Spacer()
                 }

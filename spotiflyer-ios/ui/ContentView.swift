@@ -55,32 +55,30 @@ struct ContentView: View {
         func showPopUpMessage(string: String, long long_: Bool) {
             // TODO
         }
-
-        var currentPlatform: AllPlatforms = AllPlatforms.Native()
-
-        var dispatcherIO: Kotlinx_coroutines_coreCoroutineDispatcher = AppDelegate.deps.defaultDispatcher
-
-        var isInternetAvailable: Bool = true // TODO
+        
+        var isInternetAvailable: Bool {
+            return true
+        } // TODO
 
         var platformActions: PlatformActions = IOSActions()
     }
 
     private class IOSActions:PlatformActions {}
 
-
-    
     var body: some View {
         RootView(componentHolder.component)
-            .onAppear { LifecycleRegistryExtKt.resume(self.componentHolder.lifecycle)
-                print(AppDelegate.deps.dir.defaultDir())
+            .onAppear {
+                LifecycleRegistryExtKt.resume(self.componentHolder.lifecycle)
             }
-            .onDisappear { LifecycleRegistryExtKt.stop(self.componentHolder.lifecycle) }
+            .onDisappear {
+                LifecycleRegistryExtKt.stop(self.componentHolder.lifecycle)
+            }
     }// Body
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .previewLayout(.sizeThatFits)
+            .previewDevice("iPhone 12")
     }
 }

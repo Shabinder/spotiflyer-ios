@@ -44,15 +44,30 @@ struct RootView: View {
 
 struct RootView_Previews: PreviewProvider {
     static var previews: some View {
-        RootView(StubSpotiFlyerRoot())
+        // Main Preview
+        RootView(MainPreview())
+            .previewDevice("iPhone 12")
+        
+        // List Preview
+        RootView(ListPreview())
             .previewDevice("iPhone 12")
     }
 
-    class StubSpotiFlyerRoot: SpotiFlyerRoot {
+    private class MainPreview: SpotiFlyerRoot {
         var callBacks: SpotiFlyerRootCallBacks = stubCallBacks()
 
         var routerState: Value<RouterState<AnyObject, SpotiFlyerRootChild>> =
             simpleRouterState(SpotiFlyerRootChild.Main(component: MainScreen_Previews.StubSpotiFlyerMain()))
+
+    }
+
+    
+    
+    private class ListPreview: SpotiFlyerRoot {
+        var callBacks: SpotiFlyerRootCallBacks = stubCallBacks()
+        
+        var routerState: Value<RouterState<AnyObject, SpotiFlyerRootChild>> =
+            simpleRouterState(SpotiFlyerRootChild.List(component: ListScreen_Previews.StubSpotiFlyerList(isLoading: false)))
 
     }
 
