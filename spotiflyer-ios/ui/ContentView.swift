@@ -29,7 +29,7 @@ struct ContentView: View {
 
         var fetchPlatformQueryResult: FetchPlatformQueryResult = AppDelegate.deps.fetchPlatformQueryResult
 
-        var storeFactory: MvikotlinStoreFactory = DefaultStoreFactory()
+        var storeFactory: MvikotlinStoreFactory = LoggingStoreFactory(delegate: DefaultStoreFactory())
     }
 
     private class SpotiFlyerActions: Actions {
