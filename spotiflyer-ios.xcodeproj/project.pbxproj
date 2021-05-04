@@ -306,6 +306,7 @@
 				19C8C550261662D0003181FC /* Frameworks */,
 				19C8C551261662D0003181FC /* Resources */,
 				19065001263C223600AD382C /* Embed Frameworks */,
+				2943C9182D2C07BCBCB9F42D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -343,6 +344,7 @@
 				19C8C56B261662D2003181FC /* Sources */,
 				19C8C56C261662D2003181FC /* Frameworks */,
 				19C8C56D261662D2003181FC /* Resources */,
+				24793C6F0E648E5ABDFC87F0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -423,6 +425,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		24793C6F0E648E5ABDFC87F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-spotiflyer-ios-spotiflyer-iosUITests/Pods-spotiflyer-ios-spotiflyer-iosUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-spotiflyer-ios-spotiflyer-iosUITests/Pods-spotiflyer-ios-spotiflyer-iosUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-spotiflyer-ios-spotiflyer-iosUITests/Pods-spotiflyer-ios-spotiflyer-iosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2943C9182D2C07BCBCB9F42D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-spotiflyer-ios/Pods-spotiflyer-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-spotiflyer-ios/Pods-spotiflyer-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-spotiflyer-ios/Pods-spotiflyer-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4B6335F49FA300D5A1EA9CD7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

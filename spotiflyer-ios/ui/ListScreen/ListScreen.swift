@@ -72,7 +72,11 @@ struct ListScreen: View {
                     }
                     
                     ForEach(result.trackList) { item in
-                        ListItem(item: item, loadImage: component.loadImage)
+                        ListItem(
+                            item: item,
+                            loadImage: component.loadImage,
+                            onDownloadClicked: component.onDownloadClicked
+                        )
                             .listRowInsets(EdgeInsets())
                     }
                     // TrackList

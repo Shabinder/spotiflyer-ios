@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     static var deps : IOSDeps {
         sharedInstance.dependencies
     }
-
+    
     /*Dependency Holder*/
     let dependencies:IOSDeps = IOSDeps()
 

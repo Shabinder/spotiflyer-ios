@@ -14,6 +14,7 @@ struct ListItem: View {
 
     var item: TrackDetails
     let loadImage: (_ url: String, _ completionHandler: @escaping (Picture?, Error?) -> Void) -> Void
+    let onDownloadClicked: (_ track: TrackDetails) -> Void
 
     var body: some View {
         HStack(alignment: .center, spacing: 12) {
@@ -58,6 +59,11 @@ struct ListItem: View {
                 .resizable()
                 .frame(width: 42, height: 42, alignment: .center)
                 .padding(.trailing,4)
+                .onTapGesture {
+                    withAnimation {
+                        onDownloadClicked(item)
+                    }
+                }
             // Download Action Image
             
             
@@ -71,7 +77,7 @@ struct ListItem_Previews: PreviewProvider {
     static var previews: some View {
         ListItem(
                 item: TrackDetails(title: "Song Name", artists: ["Shabinder"], durationSec: 265, albumName: "", year: "", comment: "", lyrics: "", trackUrl: "", albumArtPath: "", albumArtURL: "", source: .spotify, progress: 0, downloaded: .NotDownloaded(), outputFilePath: "", videoID: "")
-        ) { s, closure in  }
+        ) { s, closure in  } onDownloadClicked: {_ in }
                 .previewLayout(.sizeThatFits)
     }
 }

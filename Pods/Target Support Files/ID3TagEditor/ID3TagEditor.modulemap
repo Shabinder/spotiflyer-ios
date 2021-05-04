@@ -1,0 +1,6 @@
+framework module ID3TagEditor {
+  umbrella header "ID3TagEditor-umbrella.h"
+
+  export *
+  module * { export * }
+}

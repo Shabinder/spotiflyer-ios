@@ -7,73 +7,352 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A51E899946969E99AC892C3BF6DD482 /* Pods-spotiflyer-iosTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31F73717B7C83535782C24F65169C21A /* Pods-spotiflyer-iosTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CEA370B23F83F0A7D1115489A0C6E1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		01012B89410A2B4E2EEDF1123AC6E2F8 /* ID3AttachedPictureFrameContentParsingOperationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F91A8536845A887594DD3C21D63AB81 /* ID3AttachedPictureFrameContentParsingOperationFactory.swift */; };
+		036AEBBBCC8ED43CF465C609D7B769E5 /* ID3FrameContentLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75186C02A601664C86A72AB5D2C8FB /* ID3FrameContentLanguage.swift */; };
+		038E2576F726C7ED4E02BF65BEEAA6CA /* FrameFromIntegerContentAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E5A800586B6B1B83783CACD6F47783 /* FrameFromIntegerContentAdapter.swift */; };
+		041082100F0DC961443F7FAFFC6038F8 /* ID3LocalizedFrameCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB85702ED840B57381A7DBBD958C9CB /* ID3LocalizedFrameCreator.swift */; };
+		046505BAF9623489D31E4906D1BF8EC0 /* UInt32ToByteArrayAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784DA84D301137BB8C8BA6BB9578FB1D /* UInt32ToByteArrayAdapter.swift */; };
+		053F15F06C15112DA9EFCBCED8B2C347 /* ID3FrameWithStringContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1E0B6F2F3164F105C05743585F64BD /* ID3FrameWithStringContent.swift */; };
+		069BEC094846E233ED7FB2A6D6357D7D /* SynchsafeEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C186F9754987F4F372792A13EEEDC65B /* SynchsafeEncoder.swift */; };
+		08402740468028A921BD7F3C463773A7 /* ID3ParsingOperationForID3FrameWithIntegerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39FE15F0D27F3DCAF4AD1CBB130377C /* ID3ParsingOperationForID3FrameWithIntegerFactory.swift */; };
+		0A00C5871EA6A9805319E4D8FA99C04C /* ID3TagHeaderCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99630F69E75C931AFB83EDE40F28FF32 /* ID3TagHeaderCreator.swift */; };
+		0A47AEBA0E98814947B429997B59C65D /* ID3RecordingTimesFrameCreatorsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2C8C39591115DA1797ECCE331FAB38 /* ID3RecordingTimesFrameCreatorsFactory.swift */; };
+		0B9DC6D77A504D4B7035D6C3F8A781CF /* FrameFromStringContentAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0E48019BF7A9214664C99BE8E6AD420 /* FrameFromStringContentAdapter.swift */; };
+		0CD7F8FE353E35C5B9378FB2BA7E61A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		0E31AD5E5FFBB436960ED4913371A168 /* ID3PictureFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE757B8BF7A32DEEDD4CA0C1905BC96 /* ID3PictureFormat.swift */; };
+		11B350DB30970000DF1AB7635B76E494 /* ID3Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2722314BF22C848DF927F5026DD48D56 /* ID3Tag.swift */; };
+		1244F0968015638279D3FA0546475C2A /* ID3PartOfTotalStringAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC908460B1A11FCF14C74A4A291DF8 /* ID3PartOfTotalStringAdapter.swift */; };
+		13CE5412963146CA020323B2F2C85259 /* ID3AttachedPictureFrameConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E759F40D0264D5CCEB0F8C241E4DFB9B /* ID3AttachedPictureFrameConfiguration.swift */; };
+		156CC8F3D18748F603E88E99714D8A87 /* ID3TagEditor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42D8A8E344A5BF22ED09116920AEC058 /* ID3TagEditor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A51E899946969E99AC892C3BF6DD482 /* Pods-spotiflyer-iosTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30A97B0B5A2C1A534BF8AFA48DFAD39B /* Pods-spotiflyer-iosTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AF333C9C090E4F9A5B0EBE26F15F215 /* ID3FrameFromStringContentCreatorWithUTF16EncodingFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9DB3677497F231A999970AC4656BE4 /* ID3FrameFromStringContentCreatorWithUTF16EncodingFactory.swift */; };
+		1B55B8469DDA12169CEEAFE7DFB45359 /* ID3FrameContentParsingOperationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F0C601C195447D54A205124F2F0456 /* ID3FrameContentParsingOperationFactory.swift */; };
+		1CC4BDD7DC4B71117C94EE7619EC9F26 /* TagSizeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E994523F19E277413CAA0B9C95DDA00 /* TagSizeParser.swift */; };
+		1F94F9F8BBDA14D90D071C17F4EE3019 /* ID3FrameRecordingDateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133FA21D468F9ABC612665E1E80E67E1 /* ID3FrameRecordingDateTime.swift */; };
+		2673531CADE4C5DC0EDD650DE250573D /* FrameContentSizeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB0A0EA8F1CCA88234637058EA6552F /* FrameContentSizeCalculator.swift */; };
+		2B5F2BED0AD322F9470C58EB163AB51E /* ID3DiscPositionFrameCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96027DFF66C539FD8DA1F5BDA6C3D480 /* ID3DiscPositionFrameCreator.swift */; };
+		2D1F630C9096652264523640EB470696 /* ID3FramesWithLocalizedContentCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F939A781196A1C9A7387C50AAC6D869B /* ID3FramesWithLocalizedContentCreator.swift */; };
+		2D3EA338660D6EFAAAF937FFFC8BF8B7 /* ID3FrameStringContentParsingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974951782B8F440A81DDF0AEA00A6D76 /* ID3FrameStringContentParsingOperation.swift */; };
+		309FF2529ADDE2BB62CBCDB294FAC6B2 /* FrameContentAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA9ED393B94DC5C7E96C0C63D1AA2D7 /* FrameContentAdapter.swift */; };
+		31C034335567E148C2364E91ACEA7526 /* ID3FrameFromStringContentCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5679C6537F97F091332AF37F97A11261 /* ID3FrameFromStringContentCreator.swift */; };
+		3207F33F4B9C458E15A59C4C1500ACD1 /* PartOfTotalStringAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DFACC020DD8053554CEE581CE388E95 /* PartOfTotalStringAdapter.swift */; };
+		37CC0C5711E4E223593AAE6E29D007BE /* ID3AttachedPictureFrameContentParsingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F45B102D2EFBAD0C0543B0AAFA773F /* ID3AttachedPictureFrameContentParsingOperation.swift */; };
+		38AB7A376B72EBC2ED43843B677B927F /* ID3FrameRecordingDayMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489AD54BB8754322889287AC800DF87C /* ID3FrameRecordingDayMonth.swift */; };
+		39558D175E81829B7CAE62C606C7E297 /* ID3AttachedPicturesFramesCreatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E858B3BB3C99C9124F1CCD70DE62EF /* ID3AttachedPicturesFramesCreatorFactory.swift */; };
+		3C83C61F2D580DA4060EC89EFE282877 /* ID3FrameContentCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31037A0935D45D25B6EE02669A24FC0 /* ID3FrameContentCreator.swift */; };
+		3DC08FF118146DEFCD03A671612168F9 /* ID3StringEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C346A0E11145F69B19F4FD0AACB3FBE9 /* ID3StringEncoding.swift */; };
+		3DCB6FE3FA90885E72753058AA9A815B /* ID3FramesCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85FB63C5F1EF7A170F86A125E4E3093 /* ID3FramesCreator.swift */; };
+		41591DC8EAFE7FA0882AB4F604C38BA9 /* ID3Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C42C71649384F2AEAFBB86555884587 /* ID3Frame.swift */; };
+		42481849B69B69672935D1E478501A1B /* ID3GenreStringAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8648CFF08843E0FC15D7492BB485DA5 /* ID3GenreStringAdapter.swift */; };
+		481385E538A7B6CE195B9745D2C606F1 /* ID3FrameContentSizeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47F4EF6E04B44BB56BD314664B40D86 /* ID3FrameContentSizeParser.swift */; };
+		4A05573086670492DB057270C44F4DC0 /* FrameContentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECF3E9FDA69E9F9D23FCC17532BCAA0 /* FrameContentParser.swift */; };
+		4C556F8445E8624DBCD78A1F16B51B52 /* ID3iTunesFrameCreatorsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79BA2D21508A7E049F4DED5D0CB48C3D /* ID3iTunesFrameCreatorsFactory.swift */; };
+		4CEF17D607F8E1226D5A97C44D913755 /* FrameName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9314D7B1DAB4F55E869F380EBB7AA5 /* FrameName.swift */; };
+		4D05E64B3E702742CF8C222FF3E2767D /* ID3FrameContentSizeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9691C74B200BF25F87E6701FEE24ED26 /* ID3FrameContentSizeCalculator.swift */; };
+		4F40DB896BD5269E376A6FF4B20B8799 /* PaddingAdder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D9C54FA9EBFEAB63A459A37418559 /* PaddingAdder.swift */; };
+		50E428266B1BFCC99BAEC6FB96275177 /* TagPresence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FC8FB2A8F493B4213BE5FF61709885 /* TagPresence.swift */; };
+		52BB24E5B459FEBBC3871F68D7F2BA13 /* ID3TagVersionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA80771E51D01AA3BF20D865EF7EFA6 /* ID3TagVersionParser.swift */; };
+		52CB1AA1223D14BA6CE29019B9DF1D93 /* UInt32ToByteArrayAdapterUsingUnsafePointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A308CCCF62DAFCDD6FACC7191868ECF /* UInt32ToByteArrayAdapterUsingUnsafePointer.swift */; };
+		533C2D26F97DD39B36DBC3439CC63057 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9582A0FA9C7300AFABB17A496CA8715A /* Pods-spotiflyer-ios-spotiflyer-iosUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5550CC1E118AB97AD7C062A36EA573B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		58F4E231D84775B7507B712C5735608C /* ID3FrameParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F0D746BDC26CC336FA14625D0C2C2B /* ID3FrameParser.swift */; };
+		5A854FFCF501ADCBDE3150C8A547A758 /* PictureTypeAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE3E77AE3E3A8B3BA2CCF89E6F843B5 /* PictureTypeAdapter.swift */; };
+		5E36EDD75B837C224705FD7F7FFC4EA1 /* SynchsafeIntegerEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DBCF4AF31A2105AD86B7777B8EDC81 /* SynchsafeIntegerEncoder.swift */; };
+		6166809F0AF39DF270D791D4DC50A855 /* ID3RecordingHourMinuteFrameContentParsingOperationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70A532556E8B2CF72A95E4924376D93 /* ID3RecordingHourMinuteFrameContentParsingOperationFactory.swift */; };
+		6327773CA8146031E7B0CF48A2EE1C5E /* ID3FrameCreatorsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3334264B011CA5B42D27370641BC9F6 /* ID3FrameCreatorsFactory.swift */; };
+		63442C13E771954C9AA43691BC759FAA /* FrameFlagsCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D149D2BF397ADD520A2F14672D7AD5B /* FrameFlagsCreator.swift */; };
+		669A6AD5FEEBACCD6A8B4EA8E151E4EA /* ID3Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBE288900E310F061D5E148EDFE3B9 /* ID3Version.swift */; };
+		68AC265FAF07FF6131AB5E00C4B56139 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		6CFCA0CBD63A9232B9469B9B547C7411 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		741E794B9A17867CE58F7DB8422F012C /* Pods-spotiflyer-ios-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1937DBBE63A71FD88F49C8FF00883073 /* Pods-spotiflyer-ios-dummy.m */; };
-		79D5C2FE46A602332F31CFBC3FEA7FB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		C4DC71FC53ECBB27CDC26A4E1662A29A /* Pods-spotiflyer-ios-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B8646E5C57CC636DADE5FC6F25D1979 /* Pods-spotiflyer-ios-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C5977F93610078B3DA385B4ECF9922A4 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5569007849BE36265A92A7BA08017E5D /* Pods-spotiflyer-ios-spotiflyer-iosUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CDD0ACEB896D25245DB4B08C93406B56 /* Pods-spotiflyer-iosTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F04369722DF477FAA285EB7453DD59 /* Pods-spotiflyer-iosTests-dummy.m */; };
-		E43371C24688791D637AB54812DE5030 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A0962D52213C8D8383BD3ACD5745A5 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-dummy.m */; };
+		6D953430D80931DAB958E9050DA95012 /* ID3GenreFrameCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5088D63D858F3E62F300074986A06 /* ID3GenreFrameCreator.swift */; };
+		6EC5BE8047F554BAED0110990D99B127 /* ID3TagPresence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E234544B5EFC34500A41B00B74D4F81B /* ID3TagPresence.swift */; };
+		6EE5C1ABBEEEC6DAF92B9D267FDF1069 /* TagBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB83259F60AEC58B6268FA29A3D1BB3D /* TagBuilder.swift */; };
+		6FF7A05D466F45FE67ED1FC30868E220 /* FrameContentParsingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9221E178DD57CE5DD492AA167A38697C /* FrameContentParsingOperation.swift */; };
+		70C774508AE38A8F944DB87160056C62 /* ID3FrameStringEncodingDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0CC38161D1718A9BF89152C95777E2 /* ID3FrameStringEncodingDetector.swift */; };
+		73A80675FC2B1383ABBEFB56BBC2EA55 /* ID3StringEncodingConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB2939E2AD5C941CF09853E442E00AC /* ID3StringEncodingConverter.swift */; };
+		772121F571CF7B0BF3EC6A4533866153 /* ID3FrameAttachedPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776EA7DE3F0F3C2022A42C6C0A555E4F /* ID3FrameAttachedPicture.swift */; };
+		78B7743827B5808BDD360B6270EA870C /* ID3FrameSizeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E1B6EA10FBDDC4E24CA52AF513DEFD /* ID3FrameSizeParser.swift */; };
+		7BED447B26E1AD1E610D5CF1A3BE02C8 /* ID3PictureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1EFD30F9BCC81592A7298375AED690 /* ID3PictureType.swift */; };
+		82CED6248F411CA96253022B799780C5 /* Pods-spotiflyer-ios-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF8CFA5D0741FBA9C9F331558035255 /* Pods-spotiflyer-ios-dummy.m */; };
+		847E9ED012A8BF8EE750FF125AC39871 /* TimestampCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 560EB215A422FD57ACE00D5F90B003D8 /* TimestampCreator.swift */; };
+		854B4BB62A7824AAE06B72B0F3980821 /* LocalizedFrameCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CAF1A474C5BCEB1AAF8638CB6A428D /* LocalizedFrameCreator.swift */; };
+		861814FC4D68DD8ED44152AD4B63A56E /* ID3AttachedPicturesFramesCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A41CE01AE3032654EAABFE1DCCF8E02 /* ID3AttachedPicturesFramesCreator.swift */; };
+		89040A773E71EBD909D38F5DDDA4B49F /* ID3RecordingDayMonthFrameCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159BC2AD51C463998F574EEAC257CAFF /* ID3RecordingDayMonthFrameCreator.swift */; };
+		8B1457803E68D05C837B7069B7C8F1DC /* Mp3FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64E79E9145153BE9417116560DEDEB7 /* Mp3FileReader.swift */; };
+		8D04EB661A3803AE4793E10E8480ECBF /* ID3TrackPositionFrameContentParsingOperationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DE89B5E1EA0C71E651F705CC8BDD2 /* ID3TrackPositionFrameContentParsingOperationFactory.swift */; };
+		8DBA0F4AA72F598B5B877DFC91225F54 /* ID3GenreFrameContentParsingOperationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FA500360F2A977134941BFD2815DA4 /* ID3GenreFrameContentParsingOperationFactory.swift */; };
+		8E2A82B34F773EDC5C5B7E60F332257B /* FrameType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F5EA49C90811C28FC0E1888D1CEAE /* FrameType.swift */; };
+		9073843C4A9B53368158192427E743AA /* ID3FrameConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338A73613A4E369180796A6A0520DE5C /* ID3FrameConfiguration.swift */; };
+		914EA89DA82970CCC5546F4E3A7E2957 /* ID3FramePartofTotal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C4C28399EE25BA3CCB5FBE417DCA0C /* ID3FramePartofTotal.swift */; };
+		961F4731E695696678B36132FEFF149A /* ID3AttachedPictureFrameCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46355BDC1B9BD493843157C321319628 /* ID3AttachedPictureFrameCreator.swift */; };
+		99FF7483B7252FCD26EDEA1A7102B0D5 /* PaddingRemoverUsingTrimming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDF6A6F346FF0775B7BF44F51D29A9E /* PaddingRemoverUsingTrimming.swift */; };
+		9A6D95948CF41C95378A827B36304DB3 /* ID3ISO88591StringToByteAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1CDA152C66FEF4DC444575BF696E2E /* ID3ISO88591StringToByteAdapter.swift */; };
+		A31C1B400AD41A918A4C5DEC3ACD43D7 /* ID3FrameStringContentParsingOperationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F80776B05F88859607657657545EE5 /* ID3FrameStringContentParsingOperationFactory.swift */; };
+		A35A127AD9C2FCE47E9B9D3620E3B55F /* ID3TimestampCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4EB2071F4F9F42B5261C7332BADE63 /* ID3TimestampCreator.swift */; };
+		A4B1D1B22B856724C94CA620CA65BBEF /* FrameFromStringContentCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5354BF462018950DB69B94B37AC2B35 /* FrameFromStringContentCreator.swift */; };
+		A5F0D13DD8C2F182F7E4B43EF39AD791 /* ID3RecordingTimeFrameContentParsingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBE9C59F56A67E0967712C354C172C5 /* ID3RecordingTimeFrameContentParsingOperation.swift */; };
+		A6820F215342E38DC0B61F06F131DFC5 /* ID3TagEditorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A68B1CD4AAB45143CBBE3B4A5F196D4 /* ID3TagEditorError.swift */; };
+		A77AFEBD3C1C2E260665B129088696DC /* ID3ParsingOperationForID3FrameWithStringFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527FEFA9EA96ACE8EC81B4415E5B2D5A /* ID3ParsingOperationForID3FrameWithStringFactory.swift */; };
+		AA4E6C14C1E5A81F9D7886263952906B /* PaddingAdderToEndOfContentUsingNullChar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127010C6FE1DA98B2C9D1F8826EBA3CB /* PaddingAdderToEndOfContentUsingNullChar.swift */; };
+		AA699A38B0E86AB0BF2629CB4076EB20 /* ID3FramesWithLocalizedContentCreatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D4F4AF7AA999502CC1C94F00DFED8A /* ID3FramesWithLocalizedContentCreatorFactory.swift */; };
+		AB49C905A473C3D04CB220A4FD621212 /* ID3TagEditor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 410DEA0A3CEBCFD03386A1233D4FBB73 /* ID3TagEditor-dummy.m */; };
+		AB551ED4CC7E1A321C9C06FAFCEAEE0A /* ID3FrameStringContentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F546C85BAAA9B7FD01CBFDF341BF6 /* ID3FrameStringContentParser.swift */; };
+		AF4A63E23ADF415073B99AD5167DB227 /* Mp3FileWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62AA6DB69A5F543485C98150E78AC66 /* Mp3FileWriter.swift */; };
+		B216151EAC0A40FBD5216C9C37B1C05F /* ID3FrameHeaderCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E20F734A34F6FCBB49499282062BB72 /* ID3FrameHeaderCreator.swift */; };
+		B2D703D64EF210D817B2B3DB8F748F0D /* ID3TrackPositionFrameCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949708668BBDC6A3067D8AD79BEC0B4A /* ID3TrackPositionFrameCreator.swift */; };
+		B4586D4FE41F6ECFCF1A592FC97538F4 /* ID3TagParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB657D46962CA3468DDF44175CBDE73 /* ID3TagParser.swift */; };
+		B69CDF642A6FBBEEE3571A9670FED451 /* ID3RecordingDayMonthContentParsingOperationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266DF68805EB158DB7AD78413CF6C43B /* ID3RecordingDayMonthContentParsingOperationFactory.swift */; };
+		B77829574C47A24904AA3C8CDEA74995 /* ID3LocalizedFrameContentParsingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B814CC783084AF41F420E3B57468F48 /* ID3LocalizedFrameContentParsingOperation.swift */; };
+		B7C89BDB695E470C784EF1AB05311CA8 /* FrameHeaderCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F2E0A8B58410D40989822FFF82772F /* FrameHeaderCreator.swift */; };
+		B7E9E90A06664C1557F30F33485754FF /* ID3FrameCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C77EBF869175CE268BD368147E7C438 /* ID3FrameCreator.swift */; };
+		B9BC2E9F4B8875FC998C21C0DAB358A0 /* ID3FrameFromStringContentCreatorWithISO88591EncodingFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEC6E15F1B6733FFAD4F416D341CBE9 /* ID3FrameFromStringContentCreatorWithISO88591EncodingFactory.swift */; };
+		BAC943646DDD37AA13A0AE3051D88CD8 /* ID3FrameGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F17BBC61DDBB0C862248B4B2BE3BC3F /* ID3FrameGenre.swift */; };
+		BB0A1E4294D203B3250E4CECD752B0A9 /* ID3LocalizedFrameContentParsingOperationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6389C4C94A90227EE2014514FC4242 /* ID3LocalizedFrameContentParsingOperationFactory.swift */; };
+		BD20739A8DCAAEC329098B8A08B6DE1B /* FrameSizeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13F8F74482D9DD5E8F45DBEE6F88EA3 /* FrameSizeParser.swift */; };
+		BFA94E721D25187699FDE101286089E3 /* ID3FramesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F397A6366D4FCCA4578E7255C3400299 /* ID3FramesParser.swift */; };
+		C5DC1127F196A2D6BDCE3BA5ED4656E2 /* ID3RecordingHourMinuteFrameCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B6F8E0F3A01299ABBE2D8ACCE530FC /* ID3RecordingHourMinuteFrameCreator.swift */; };
+		C77E41F1A0FA590A3B3DE97E3B55ADF2 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6599A359F5A25FEE828A8D3579239DFB /* Pods-spotiflyer-ios-spotiflyer-iosUITests-dummy.m */; };
+		C86E63780FA3EF60D11CDCE0474BFCD3 /* SynchsafeIntegerDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC7989A1EF641FBBA434AC36F817DC /* SynchsafeIntegerDecoder.swift */; };
+		CA90F8E21F0ACD18215694A6DFED9547 /* ID3TagConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401A79E018634B80D61D7383175741EA /* ID3TagConfiguration.swift */; };
+		CD33B54728B503AAF8DFEA8DC2E706F1 /* ID3CoupleOfNumbersAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FA1E2C306C504BDDF66E397C942B00 /* ID3CoupleOfNumbersAdapter.swift */; };
+		CD4E9642EB9F121F302B1DEFE4775F01 /* ID3FrameHeaderCreatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C206D3192FB246FC4B41DA284AE6154F /* ID3FrameHeaderCreatorFactory.swift */; };
+		CDD0ACEB896D25245DB4B08C93406B56 /* Pods-spotiflyer-iosTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A85EE241C86AE91667BA39157A66E21E /* Pods-spotiflyer-iosTests-dummy.m */; };
+		CFA1A540FBF5FF2028D1C3F28447215A /* ID3TagSizeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A5DEE037A1F94364304047F6A3CBFA /* ID3TagSizeParser.swift */; };
+		D06367D495319699C0112B65E462DE8F /* ID3TagToStringAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD230BCD166E2E23098B09A852141DE /* ID3TagToStringAdapter.swift */; };
+		D162F1BDEF8C67EAE020DCE8E08FB905 /* ID3TagCreatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2806FD4C4D3D5CA3DBF162906B26A630 /* ID3TagCreatorFactory.swift */; };
+		D214F602F3B12AF4D007C76FDEF85E80 /* ID32v2TagBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8581D579E2F0CEE10B21BF66A6C7BD0 /* ID32v2TagBuilder.swift */; };
+		D2865E4D2CB559D3C6CD8C689FF75448 /* Mp3WithID3TagBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FAF7028F2267D36B3A50E8F85A0FF2 /* Mp3WithID3TagBuilder.swift */; };
+		D40A4DF03745290B63343A8F64B68E03 /* ID3FrameWithLocalizedContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6873FF88ED986461EC59FE23E79F1B89 /* ID3FrameWithLocalizedContent.swift */; };
+		D4908467C60ACC0B7B9D29ECA8D591B7 /* ID3Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F5B4ACA4948F7630AD56D80146EFE5 /* ID3Genre.swift */; };
+		D4DE77417C2095AF05E50850920B14C4 /* ID3TagProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A7743E7B4996E63167A96E46AE0CB4 /* ID3TagProperties.swift */; };
+		D689259F8B471BA28FAA17A5A40AEE3C /* ID3TagEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E194C1B7E18688D951624E9590FE3 /* ID3TagEditor.swift */; };
+		D6AE72B0FF7A9FB976158B33C254BAB0 /* ID3TagParserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F2E586CC5CE454B93E01DE5ED7E87F /* ID3TagParserFactory.swift */; };
+		D78916FCD514941645164D27CEE0149D /* ID3UTF16StringToByteAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E797FED6586EBD85D656FE2B7B7620 /* ID3UTF16StringToByteAdapter.swift */; };
+		DBDD7543D717F7C5DE62483521C328B1 /* ID3TagEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = CE2B20C2D9010672BF9F6AD0845ECEA4 /* ID3TagEditor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFA51B407B1C6FE092198AF6A65223E5 /* ID3RecordingDateTimeFrameCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C79606B7B3331D32F2F9B9C985B8865 /* ID3RecordingDateTimeFrameCreator.swift */; };
+		E034990F8110B3DB834BE7BCFD7E22C4 /* Pods-spotiflyer-ios-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F903DC08A3EC8B9876EEDFF30D073B57 /* Pods-spotiflyer-ios-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0477C16FAADCCDD3862710232D70BFF /* PaddingRemover.swift in Sources */ = {isa = PBXBuildFile; fileRef = A166CE5C70E6E4D3BFAEB17AC6681328 /* PaddingRemover.swift */; };
+		E34CA6FC07C93E023F427586F00C5134 /* ID3RecordingTimeFrameContentParsingOperationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D4DD470859399E148679E3CBB72E44 /* ID3RecordingTimeFrameContentParsingOperationFactory.swift */; };
+		E5142F9E513E954503B618DB0234D54E /* FrameContentSizeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07F5752E13B389CF9A2918ED8204952 /* FrameContentSizeParser.swift */; };
+		E9075A70BDCEC8E663F04986AF87517C /* ID3PictureTypeAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC63F429B0A21BEB3FD16F9E14C29129 /* ID3PictureTypeAdapter.swift */; };
+		EBF60225BBBE3FFA3B4CB105116126C4 /* StringToBytesAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FBE7E267C8FEA97F34A4A7BA6980BC /* StringToBytesAdapter.swift */; };
+		EC23768F544094E1E82879761AB0921E /* TagVersionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0915FD0BB00698DC9A004C5A2EE593 /* TagVersionParser.swift */; };
+		EED881EB648D400DEAFF61B61371D2FA /* ID32v4TagBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 705573FF0EE1C04097421EDD46441123 /* ID32v4TagBuilder.swift */; };
+		F05558635D7BADCC6DEA04DB4FD95319 /* ID3FrameStringContentParserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D38EBFA5C74E7EAFD44687761E1253 /* ID3FrameStringContentParserFactory.swift */; };
+		F0C86E50DD1B320226E5C5EA40C961D6 /* ID3FrameWithIntegerContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501F173C35E85F4F64EBC288ADA02094 /* ID3FrameWithIntegerContent.swift */; };
+		F4CAC612412915CA5443CE50A2B0C567 /* ID3FrameFlagsCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B8F34F2031BA03767F7F056AD67E2A /* ID3FrameFlagsCreator.swift */; };
+		F844E750BFE513FF971B037618DF5E6A /* ID3DiscPositionFrameContentParsingOperationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12956A7B868EAA5D3CF59ECF6F938012 /* ID3DiscPositionFrameContentParsingOperationFactory.swift */; };
+		F875BF570244692C892C2DF045D060F1 /* ID32v3TagBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0F9FFD8B4FD42AB1B4998A0B3F1F28 /* ID32v3TagBuilder.swift */; };
+		FA9D09200A06308ADA79883866055A19 /* ID3FrameRecordingHourMinute.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5DF5F35445374F8E4D490F9A7566E9 /* ID3FrameRecordingHourMinute.swift */; };
+		FFEBAC6D46C0CD93F3D1B3ABB450B7C5 /* ID3TagCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DA38D72DE5E812B7B9F53D8390A58C /* ID3TagCreator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		ED3703FC1A65BDE8EEC5D9B1112E391F /* PBXContainerItemProxy */ = {
+		5E8CFA290896B145957AF05689749563 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC62014506C53A9BFE30C82CF896C217;
+			remoteInfo = ID3TagEditor;
+		};
+		88516E934E5B07D3A21046851D0B1DD6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 44FB1BB20ADE3A532938636DCF43BD97;
 			remoteInfo = "Pods-spotiflyer-ios";
 		};
+		B8020CC5123BC45E3053B75187234FA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC62014506C53A9BFE30C82CF896C217;
+			remoteInfo = ID3TagEditor;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1937DBBE63A71FD88F49C8FF00883073 /* Pods-spotiflyer-ios-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-spotiflyer-ios-dummy.m"; sourceTree = "<group>"; };
-		1A95042AD56475979E34DE51A723DB16 /* Pods-spotiflyer-iosTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-spotiflyer-iosTests-Info.plist"; sourceTree = "<group>"; };
-		1BA39147D29C7CFEB231445F03C03D12 /* Pods-spotiflyer-ios-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-spotiflyer-ios-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1EE27B7CA96CE812BC6B6E16CE4D96EA /* Pods-spotiflyer-iosTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-spotiflyer-iosTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		2786FD6931974AF8B1D56BD1AB819C3D /* Pods-spotiflyer-iosTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-spotiflyer-iosTests.modulemap"; sourceTree = "<group>"; };
-		30902683E67F55EF56FC7DE649140C2F /* Pods_spotiflyer_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spotiflyer_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		31F73717B7C83535782C24F65169C21A /* Pods-spotiflyer-iosTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-spotiflyer-iosTests-umbrella.h"; sourceTree = "<group>"; };
-		378605E67C7740F60EEFB5371DB0F390 /* Pods-spotiflyer-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spotiflyer-ios.debug.xcconfig"; sourceTree = "<group>"; };
-		3B8646E5C57CC636DADE5FC6F25D1979 /* Pods-spotiflyer-ios-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-spotiflyer-ios-umbrella.h"; sourceTree = "<group>"; };
-		46B67514EEA2EB5FC998819433B58BCC /* Pods-spotiflyer-ios-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-spotiflyer-ios-acknowledgements.plist"; sourceTree = "<group>"; };
-		474FAA1FB7C23C8E218E74ADA7196ACD /* Pods-spotiflyer-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spotiflyer-ios.release.xcconfig"; sourceTree = "<group>"; };
-		5569007849BE36265A92A7BA08017E5D /* Pods-spotiflyer-ios-spotiflyer-iosUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests-umbrella.h"; sourceTree = "<group>"; };
+		08FC8FB2A8F493B4213BE5FF61709885 /* TagPresence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagPresence.swift; path = Source/Tag/TagPresence.swift; sourceTree = "<group>"; };
+		0C0CC38161D1718A9BF89152C95777E2 /* ID3FrameStringEncodingDetector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameStringEncodingDetector.swift; path = Source/Parse/ID3FrameStringEncodingDetector.swift; sourceTree = "<group>"; };
+		0DA9ED393B94DC5C7E96C0C63D1AA2D7 /* FrameContentAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameContentAdapter.swift; path = Source/Create/FrameContentAdapter.swift; sourceTree = "<group>"; };
+		0EB0A0EA8F1CCA88234637058EA6552F /* FrameContentSizeCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameContentSizeCalculator.swift; path = Source/Create/FrameContentSizeCalculator.swift; sourceTree = "<group>"; };
+		0F17BBC61DDBB0C862248B4B2BE3BC3F /* ID3FrameGenre.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameGenre.swift; path = Source/Frame/ID3FrameGenre.swift; sourceTree = "<group>"; };
+		0FDF6A6F346FF0775B7BF44F51D29A9E /* PaddingRemoverUsingTrimming.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaddingRemoverUsingTrimming.swift; path = Source/Common/PaddingRemoverUsingTrimming.swift; sourceTree = "<group>"; };
+		127010C6FE1DA98B2C9D1F8826EBA3CB /* PaddingAdderToEndOfContentUsingNullChar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaddingAdderToEndOfContentUsingNullChar.swift; path = Source/Common/PaddingAdderToEndOfContentUsingNullChar.swift; sourceTree = "<group>"; };
+		12956A7B868EAA5D3CF59ECF6F938012 /* ID3DiscPositionFrameContentParsingOperationFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3DiscPositionFrameContentParsingOperationFactory.swift; path = Source/Parse/ID3DiscPositionFrameContentParsingOperationFactory.swift; sourceTree = "<group>"; };
+		133FA21D468F9ABC612665E1E80E67E1 /* ID3FrameRecordingDateTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameRecordingDateTime.swift; path = Source/Frame/ID3FrameRecordingDateTime.swift; sourceTree = "<group>"; };
+		15507BE7808F22841F04DC64A289B72E /* Pods-spotiflyer-ios-spotiflyer-iosUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		159BC2AD51C463998F574EEAC257CAFF /* ID3RecordingDayMonthFrameCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3RecordingDayMonthFrameCreator.swift; path = Source/Create/ID3RecordingDayMonthFrameCreator.swift; sourceTree = "<group>"; };
+		17DBCF4AF31A2105AD86B7777B8EDC81 /* SynchsafeIntegerEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchsafeIntegerEncoder.swift; path = Source/Common/SynchsafeIntegerEncoder.swift; sourceTree = "<group>"; };
+		1C42C71649384F2AEAFBB86555884587 /* ID3Frame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3Frame.swift; path = Source/Frame/ID3Frame.swift; sourceTree = "<group>"; };
+		1D0F9FFD8B4FD42AB1B4998A0B3F1F28 /* ID32v3TagBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID32v3TagBuilder.swift; path = Source/Tag/ID32v3TagBuilder.swift; sourceTree = "<group>"; };
+		1D3F5EA49C90811C28FC0E1888D1CEAE /* FrameType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameType.swift; path = Source/Frame/FrameType.swift; sourceTree = "<group>"; };
+		1F4EB2071F4F9F42B5261C7332BADE63 /* ID3TimestampCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3TimestampCreator.swift; path = Source/Create/ID3TimestampCreator.swift; sourceTree = "<group>"; };
+		20FA1E2C306C504BDDF66E397C942B00 /* ID3CoupleOfNumbersAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3CoupleOfNumbersAdapter.swift; path = Source/Parse/ID3CoupleOfNumbersAdapter.swift; sourceTree = "<group>"; };
+		266DF68805EB158DB7AD78413CF6C43B /* ID3RecordingDayMonthContentParsingOperationFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3RecordingDayMonthContentParsingOperationFactory.swift; path = Source/Parse/ID3RecordingDayMonthContentParsingOperationFactory.swift; sourceTree = "<group>"; };
+		2722314BF22C848DF927F5026DD48D56 /* ID3Tag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3Tag.swift; path = Source/Tag/ID3Tag.swift; sourceTree = "<group>"; };
+		2806FD4C4D3D5CA3DBF162906B26A630 /* ID3TagCreatorFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3TagCreatorFactory.swift; path = Source/Create/ID3TagCreatorFactory.swift; sourceTree = "<group>"; };
+		29BD664DE68EA93B353F338C8D5EF9EE /* ID3TagEditor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ID3TagEditor.release.xcconfig; sourceTree = "<group>"; };
+		2A41CE01AE3032654EAABFE1DCCF8E02 /* ID3AttachedPicturesFramesCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3AttachedPicturesFramesCreator.swift; path = Source/Create/ID3AttachedPicturesFramesCreator.swift; sourceTree = "<group>"; };
+		2B75186C02A601664C86A72AB5D2C8FB /* ID3FrameContentLanguage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameContentLanguage.swift; path = Source/Frame/ID3FrameContentLanguage.swift; sourceTree = "<group>"; };
+		2C56F142B3EC2D62D329CCC46513586B /* Pods-spotiflyer-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spotiflyer-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E994523F19E277413CAA0B9C95DDA00 /* TagSizeParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagSizeParser.swift; path = Source/Parse/TagSizeParser.swift; sourceTree = "<group>"; };
+		30902683E67F55EF56FC7DE649140C2F /* Pods_spotiflyer_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_spotiflyer_ios.framework; path = "Pods-spotiflyer-ios.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30A97B0B5A2C1A534BF8AFA48DFAD39B /* Pods-spotiflyer-iosTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-spotiflyer-iosTests-umbrella.h"; sourceTree = "<group>"; };
+		338A73613A4E369180796A6A0520DE5C /* ID3FrameConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameConfiguration.swift; path = Source/Frame/ID3FrameConfiguration.swift; sourceTree = "<group>"; };
+		353AC80A29E8487AD026866A91CDB1DF /* Pods-spotiflyer-ios-spotiflyer-iosUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests-Info.plist"; sourceTree = "<group>"; };
+		35DA38D72DE5E812B7B9F53D8390A58C /* ID3TagCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3TagCreator.swift; path = Source/Create/ID3TagCreator.swift; sourceTree = "<group>"; };
+		35F2E586CC5CE454B93E01DE5ED7E87F /* ID3TagParserFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3TagParserFactory.swift; path = Source/Parse/ID3TagParserFactory.swift; sourceTree = "<group>"; };
+		39A61CAB13755BA0922E1FF6F72AD95E /* Pods-spotiflyer-iosTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-spotiflyer-iosTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3A116A7461EB864459834FD5F5C17134 /* Pods-spotiflyer-ios.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-spotiflyer-ios.modulemap"; sourceTree = "<group>"; };
+		3D2C8C39591115DA1797ECCE331FAB38 /* ID3RecordingTimesFrameCreatorsFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3RecordingTimesFrameCreatorsFactory.swift; path = Source/Create/ID3RecordingTimesFrameCreatorsFactory.swift; sourceTree = "<group>"; };
+		3EB657D46962CA3468DDF44175CBDE73 /* ID3TagParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3TagParser.swift; path = Source/Parse/ID3TagParser.swift; sourceTree = "<group>"; };
+		401A79E018634B80D61D7383175741EA /* ID3TagConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3TagConfiguration.swift; path = Source/Tag/ID3TagConfiguration.swift; sourceTree = "<group>"; };
+		410DEA0A3CEBCFD03386A1233D4FBB73 /* ID3TagEditor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ID3TagEditor-dummy.m"; sourceTree = "<group>"; };
+		4188BD68D6234B100F5A8D73CAE03E63 /* Pods-spotiflyer-ios-spotiflyer-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		42D8A8E344A5BF22ED09116920AEC058 /* ID3TagEditor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ID3TagEditor-umbrella.h"; sourceTree = "<group>"; };
+		43568F5B92085B9541EFBE3AC78A4788 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		46355BDC1B9BD493843157C321319628 /* ID3AttachedPictureFrameCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3AttachedPictureFrameCreator.swift; path = Source/Create/ID3AttachedPictureFrameCreator.swift; sourceTree = "<group>"; };
+		46D4F4AF7AA999502CC1C94F00DFED8A /* ID3FramesWithLocalizedContentCreatorFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FramesWithLocalizedContentCreatorFactory.swift; path = Source/Create/ID3FramesWithLocalizedContentCreatorFactory.swift; sourceTree = "<group>"; };
+		46F5B4ACA4948F7630AD56D80146EFE5 /* ID3Genre.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3Genre.swift; path = Source/Frame/ID3Genre.swift; sourceTree = "<group>"; };
+		47BC7989A1EF641FBBA434AC36F817DC /* SynchsafeIntegerDecoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchsafeIntegerDecoder.swift; path = Source/Common/SynchsafeIntegerDecoder.swift; sourceTree = "<group>"; };
+		489AD54BB8754322889287AC800DF87C /* ID3FrameRecordingDayMonth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameRecordingDayMonth.swift; path = Source/Frame/ID3FrameRecordingDayMonth.swift; sourceTree = "<group>"; };
+		4A308CCCF62DAFCDD6FACC7191868ECF /* UInt32ToByteArrayAdapterUsingUnsafePointer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UInt32ToByteArrayAdapterUsingUnsafePointer.swift; path = Source/Common/UInt32ToByteArrayAdapterUsingUnsafePointer.swift; sourceTree = "<group>"; };
+		4ECF3E9FDA69E9F9D23FCC17532BCAA0 /* FrameContentParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameContentParser.swift; path = Source/Parse/FrameContentParser.swift; sourceTree = "<group>"; };
+		501F173C35E85F4F64EBC288ADA02094 /* ID3FrameWithIntegerContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameWithIntegerContent.swift; path = Source/Frame/ID3FrameWithIntegerContent.swift; sourceTree = "<group>"; };
+		527FEFA9EA96ACE8EC81B4415E5B2D5A /* ID3ParsingOperationForID3FrameWithStringFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3ParsingOperationForID3FrameWithStringFactory.swift; path = Source/Parse/ID3ParsingOperationForID3FrameWithStringFactory.swift; sourceTree = "<group>"; };
+		52F0C601C195447D54A205124F2F0456 /* ID3FrameContentParsingOperationFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameContentParsingOperationFactory.swift; path = Source/Parse/ID3FrameContentParsingOperationFactory.swift; sourceTree = "<group>"; };
+		560EB215A422FD57ACE00D5F90B003D8 /* TimestampCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimestampCreator.swift; path = Source/Create/TimestampCreator.swift; sourceTree = "<group>"; };
+		56192EAB702574C002C5E952D88C5BC1 /* Pods-spotiflyer-ios-spotiflyer-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5679C6537F97F091332AF37F97A11261 /* ID3FrameFromStringContentCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameFromStringContentCreator.swift; path = Source/Create/ID3FrameFromStringContentCreator.swift; sourceTree = "<group>"; };
+		58F0D746BDC26CC336FA14625D0C2C2B /* ID3FrameParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameParser.swift; path = Source/Parse/ID3FrameParser.swift; sourceTree = "<group>"; };
+		5D149D2BF397ADD520A2F14672D7AD5B /* FrameFlagsCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameFlagsCreator.swift; path = Source/Create/FrameFlagsCreator.swift; sourceTree = "<group>"; };
+		5E1E0B6F2F3164F105C05743585F64BD /* ID3FrameWithStringContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameWithStringContent.swift; path = Source/Frame/ID3FrameWithStringContent.swift; sourceTree = "<group>"; };
+		5E20F734A34F6FCBB49499282062BB72 /* ID3FrameHeaderCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameHeaderCreator.swift; path = Source/Create/ID3FrameHeaderCreator.swift; sourceTree = "<group>"; };
+		5E778856F9128DA03C5701370DDBF480 /* ID3TagEditor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ID3TagEditor-prefix.pch"; sourceTree = "<group>"; };
+		5EB2939E2AD5C941CF09853E442E00AC /* ID3StringEncodingConverter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3StringEncodingConverter.swift; path = Source/Parse/ID3StringEncodingConverter.swift; sourceTree = "<group>"; };
+		64E5088D63D858F3E62F300074986A06 /* ID3GenreFrameCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3GenreFrameCreator.swift; path = Source/Create/ID3GenreFrameCreator.swift; sourceTree = "<group>"; };
+		6599A359F5A25FEE828A8D3579239DFB /* Pods-spotiflyer-ios-spotiflyer-iosUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests-dummy.m"; sourceTree = "<group>"; };
+		6873FF88ED986461EC59FE23E79F1B89 /* ID3FrameWithLocalizedContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameWithLocalizedContent.swift; path = Source/Frame/ID3FrameWithLocalizedContent.swift; sourceTree = "<group>"; };
+		6AEC6E15F1B6733FFAD4F416D341CBE9 /* ID3FrameFromStringContentCreatorWithISO88591EncodingFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameFromStringContentCreatorWithISO88591EncodingFactory.swift; path = Source/Create/ID3FrameFromStringContentCreatorWithISO88591EncodingFactory.swift; sourceTree = "<group>"; };
+		6B9314D7B1DAB4F55E869F380EBB7AA5 /* FrameName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameName.swift; path = Source/Frame/FrameName.swift; sourceTree = "<group>"; };
+		6BF8CFA5D0741FBA9C9F331558035255 /* Pods-spotiflyer-ios-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-spotiflyer-ios-dummy.m"; sourceTree = "<group>"; };
+		6C77EBF869175CE268BD368147E7C438 /* ID3FrameCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameCreator.swift; path = Source/Create/ID3FrameCreator.swift; sourceTree = "<group>"; };
+		6C79606B7B3331D32F2F9B9C985B8865 /* ID3RecordingDateTimeFrameCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3RecordingDateTimeFrameCreator.swift; path = Source/Create/ID3RecordingDateTimeFrameCreator.swift; sourceTree = "<group>"; };
+		705573FF0EE1C04097421EDD46441123 /* ID32v4TagBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID32v4TagBuilder.swift; path = Source/Tag/ID32v4TagBuilder.swift; sourceTree = "<group>"; };
+		72CAF1A474C5BCEB1AAF8638CB6A428D /* LocalizedFrameCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalizedFrameCreator.swift; path = Source/Create/LocalizedFrameCreator.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7A7A9C752DE5024E4985949632A1974E /* Pods-spotiflyer-ios-spotiflyer-iosUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests.modulemap"; sourceTree = "<group>"; };
-		7B0FBE0F0814F36640BDE2AB672EF24E /* Pods-spotiflyer-ios-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-spotiflyer-ios-Info.plist"; sourceTree = "<group>"; };
-		890CD887E2BCE8A05F0E88563EBE2672 /* Pods-spotiflyer-iosTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-spotiflyer-iosTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		90F04369722DF477FAA285EB7453DD59 /* Pods-spotiflyer-iosTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-spotiflyer-iosTests-dummy.m"; sourceTree = "<group>"; };
-		91D13547F513CF7539B70DE0D0449BA0 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9705BBAD6EDDA41BCE5F7B09AE0D5962 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B1234849CE619123773BED8E2E56F177 /* Pods-spotiflyer-ios-spotiflyer-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		B377F139BF53F776F4B3551E4C0A75F7 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B3A0962D52213C8D8383BD3ACD5745A5 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests-dummy.m"; sourceTree = "<group>"; };
-		C58008CEE68F91FDE9DD87640CDD4D22 /* Pods-spotiflyer-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spotiflyer-iosTests.release.xcconfig"; sourceTree = "<group>"; };
-		E0B33C2C789D925E953E60136DB57E81 /* Pods_spotiflyer_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spotiflyer_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2A9000DED8EB285C8FDC6404A52AC54 /* Pods_spotiflyer_ios_spotiflyer_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_spotiflyer_ios_spotiflyer_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E772DD234DC17EB044E9966B010793F0 /* Pods-spotiflyer-ios-spotiflyer-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
-		EBA0FC9E5033FC5DB93018DBA4733FD0 /* Pods-spotiflyer-ios.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-spotiflyer-ios.modulemap"; sourceTree = "<group>"; };
-		FD79E15609D5B02D1F6EECF3F78F72C8 /* Pods-spotiflyer-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spotiflyer-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		74E797FED6586EBD85D656FE2B7B7620 /* ID3UTF16StringToByteAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3UTF16StringToByteAdapter.swift; path = Source/Create/ID3UTF16StringToByteAdapter.swift; sourceTree = "<group>"; };
+		751C8437880278DF9C95A0AA8B612965 /* Pods-spotiflyer-ios-spotiflyer-iosUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests.modulemap"; sourceTree = "<group>"; };
+		776EA7DE3F0F3C2022A42C6C0A555E4F /* ID3FrameAttachedPicture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameAttachedPicture.swift; path = Source/Frame/ID3FrameAttachedPicture.swift; sourceTree = "<group>"; };
+		777CA1336C13D9680B54DDD322354C08 /* Pods-spotiflyer-ios-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-spotiflyer-ios-Info.plist"; sourceTree = "<group>"; };
+		784DA84D301137BB8C8BA6BB9578FB1D /* UInt32ToByteArrayAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UInt32ToByteArrayAdapter.swift; path = Source/Common/UInt32ToByteArrayAdapter.swift; sourceTree = "<group>"; };
+		797C298F11D18494C039D4D0D804CBEC /* Pods-spotiflyer-ios-spotiflyer-iosUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests-frameworks.sh"; sourceTree = "<group>"; };
+		79BA2D21508A7E049F4DED5D0CB48C3D /* ID3iTunesFrameCreatorsFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3iTunesFrameCreatorsFactory.swift; path = Source/Create/ID3iTunesFrameCreatorsFactory.swift; sourceTree = "<group>"; };
+		7A1CDA152C66FEF4DC444575BF696E2E /* ID3ISO88591StringToByteAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3ISO88591StringToByteAdapter.swift; path = Source/Create/ID3ISO88591StringToByteAdapter.swift; sourceTree = "<group>"; };
+		7A68B1CD4AAB45143CBBE3B4A5F196D4 /* ID3TagEditorError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3TagEditorError.swift; path = Source/ID3TagEditorError.swift; sourceTree = "<group>"; };
+		7B6389C4C94A90227EE2014514FC4242 /* ID3LocalizedFrameContentParsingOperationFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3LocalizedFrameContentParsingOperationFactory.swift; path = Source/Parse/ID3LocalizedFrameContentParsingOperationFactory.swift; sourceTree = "<group>"; };
+		7DB530B6C2F2F7B29C78F22DA88F24A6 /* Pods-spotiflyer-ios-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-spotiflyer-ios-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7DFACC020DD8053554CEE581CE388E95 /* PartOfTotalStringAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PartOfTotalStringAdapter.swift; path = Source/Parse/PartOfTotalStringAdapter.swift; sourceTree = "<group>"; };
+		81A5DEE037A1F94364304047F6A3CBFA /* ID3TagSizeParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3TagSizeParser.swift; path = Source/Parse/ID3TagSizeParser.swift; sourceTree = "<group>"; };
+		8525549DCD027165A84855E97FD6FA04 /* Pods-spotiflyer-iosTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-spotiflyer-iosTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		854C131900A3D2F2844372BA1C4C3805 /* Pods-spotiflyer-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spotiflyer-ios.release.xcconfig"; sourceTree = "<group>"; };
+		89B8F34F2031BA03767F7F056AD67E2A /* ID3FrameFlagsCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameFlagsCreator.swift; path = Source/Create/ID3FrameFlagsCreator.swift; sourceTree = "<group>"; };
+		8DA9378FF3B0A6B4183FF904B02C9D74 /* ID3TagEditor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ID3TagEditor.debug.xcconfig; sourceTree = "<group>"; };
+		8F91A8536845A887594DD3C21D63AB81 /* ID3AttachedPictureFrameContentParsingOperationFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3AttachedPictureFrameContentParsingOperationFactory.swift; path = Source/Parse/ID3AttachedPictureFrameContentParsingOperationFactory.swift; sourceTree = "<group>"; };
+		8FB85702ED840B57381A7DBBD958C9CB /* ID3LocalizedFrameCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3LocalizedFrameCreator.swift; path = Source/Create/ID3LocalizedFrameCreator.swift; sourceTree = "<group>"; };
+		91E480E71D7120B5858B152603BA32B4 /* Pods-spotiflyer-iosTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-spotiflyer-iosTests-Info.plist"; sourceTree = "<group>"; };
+		9221E178DD57CE5DD492AA167A38697C /* FrameContentParsingOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameContentParsingOperation.swift; path = Source/Parse/FrameContentParsingOperation.swift; sourceTree = "<group>"; };
+		949708668BBDC6A3067D8AD79BEC0B4A /* ID3TrackPositionFrameCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3TrackPositionFrameCreator.swift; path = Source/Create/ID3TrackPositionFrameCreator.swift; sourceTree = "<group>"; };
+		9582A0FA9C7300AFABB17A496CA8715A /* Pods-spotiflyer-ios-spotiflyer-iosUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests-umbrella.h"; sourceTree = "<group>"; };
+		96027DFF66C539FD8DA1F5BDA6C3D480 /* ID3DiscPositionFrameCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3DiscPositionFrameCreator.swift; path = Source/Create/ID3DiscPositionFrameCreator.swift; sourceTree = "<group>"; };
+		9691C74B200BF25F87E6701FEE24ED26 /* ID3FrameContentSizeCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameContentSizeCalculator.swift; path = Source/Create/ID3FrameContentSizeCalculator.swift; sourceTree = "<group>"; };
+		974951782B8F440A81DDF0AEA00A6D76 /* ID3FrameStringContentParsingOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameStringContentParsingOperation.swift; path = Source/Parse/ID3FrameStringContentParsingOperation.swift; sourceTree = "<group>"; };
+		97E1B6EA10FBDDC4E24CA52AF513DEFD /* ID3FrameSizeParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameSizeParser.swift; path = Source/Parse/ID3FrameSizeParser.swift; sourceTree = "<group>"; };
+		98A7743E7B4996E63167A96E46AE0CB4 /* ID3TagProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3TagProperties.swift; path = Source/Tag/ID3TagProperties.swift; sourceTree = "<group>"; };
+		99630F69E75C931AFB83EDE40F28FF32 /* ID3TagHeaderCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3TagHeaderCreator.swift; path = Source/Create/ID3TagHeaderCreator.swift; sourceTree = "<group>"; };
+		99C4C28399EE25BA3CCB5FBE417DCA0C /* ID3FramePartofTotal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FramePartofTotal.swift; path = Source/Frame/ID3FramePartofTotal.swift; sourceTree = "<group>"; };
+		9B587F1E915EBFE1FD9D26DC326AE395 /* Pods-spotiflyer-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spotiflyer-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		9B814CC783084AF41F420E3B57468F48 /* ID3LocalizedFrameContentParsingOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3LocalizedFrameContentParsingOperation.swift; path = Source/Parse/ID3LocalizedFrameContentParsingOperation.swift; sourceTree = "<group>"; };
+		9D0915FD0BB00698DC9A004C5A2EE593 /* TagVersionParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagVersionParser.swift; path = Source/Parse/TagVersionParser.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FE3E77AE3E3A8B3BA2CCF89E6F843B5 /* PictureTypeAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PictureTypeAdapter.swift; path = Source/Parse/PictureTypeAdapter.swift; sourceTree = "<group>"; };
+		A166CE5C70E6E4D3BFAEB17AC6681328 /* PaddingRemover.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaddingRemover.swift; path = Source/Common/PaddingRemover.swift; sourceTree = "<group>"; };
+		A1D4DD470859399E148679E3CBB72E44 /* ID3RecordingTimeFrameContentParsingOperationFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3RecordingTimeFrameContentParsingOperationFactory.swift; path = Source/Parse/ID3RecordingTimeFrameContentParsingOperationFactory.swift; sourceTree = "<group>"; };
+		A1F80776B05F88859607657657545EE5 /* ID3FrameStringContentParsingOperationFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameStringContentParsingOperationFactory.swift; path = Source/Parse/ID3FrameStringContentParsingOperationFactory.swift; sourceTree = "<group>"; };
+		A4E858B3BB3C99C9124F1CCD70DE62EF /* ID3AttachedPicturesFramesCreatorFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3AttachedPicturesFramesCreatorFactory.swift; path = Source/Create/ID3AttachedPicturesFramesCreatorFactory.swift; sourceTree = "<group>"; };
+		A5FAF7028F2267D36B3A50E8F85A0FF2 /* Mp3WithID3TagBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mp3WithID3TagBuilder.swift; path = Source/Mp3/Mp3WithID3TagBuilder.swift; sourceTree = "<group>"; };
+		A6D38EBFA5C74E7EAFD44687761E1253 /* ID3FrameStringContentParserFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameStringContentParserFactory.swift; path = Source/Parse/ID3FrameStringContentParserFactory.swift; sourceTree = "<group>"; };
+		A85EE241C86AE91667BA39157A66E21E /* Pods-spotiflyer-iosTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-spotiflyer-iosTests-dummy.m"; sourceTree = "<group>"; };
+		AC63F429B0A21BEB3FD16F9E14C29129 /* ID3PictureTypeAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3PictureTypeAdapter.swift; path = Source/Parse/ID3PictureTypeAdapter.swift; sourceTree = "<group>"; };
+		AD9DB3677497F231A999970AC4656BE4 /* ID3FrameFromStringContentCreatorWithUTF16EncodingFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameFromStringContentCreatorWithUTF16EncodingFactory.swift; path = Source/Create/ID3FrameFromStringContentCreatorWithUTF16EncodingFactory.swift; sourceTree = "<group>"; };
+		ADB36375500DB20158D736FD436A167A /* Pods-spotiflyer-iosTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-spotiflyer-iosTests.modulemap"; sourceTree = "<group>"; };
+		AE1EFD30F9BCC81592A7298375AED690 /* ID3PictureType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3PictureType.swift; path = Source/Frame/ID3PictureType.swift; sourceTree = "<group>"; };
+		AF74D3535484E7D3CF2B92381EE6F7B1 /* ID3TagEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ID3TagEditor.framework; path = ID3TagEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B016D3B843D1E561334840B09EDD0C52 /* Pods-spotiflyer-ios-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-spotiflyer-ios-acknowledgements.plist"; sourceTree = "<group>"; };
+		B3FC908460B1A11FCF14C74A4A291DF8 /* ID3PartOfTotalStringAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3PartOfTotalStringAdapter.swift; path = Source/Parse/ID3PartOfTotalStringAdapter.swift; sourceTree = "<group>"; };
+		B5354BF462018950DB69B94B37AC2B35 /* FrameFromStringContentCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameFromStringContentCreator.swift; path = Source/Create/FrameFromStringContentCreator.swift; sourceTree = "<group>"; };
+		B62E194C1B7E18688D951624E9590FE3 /* ID3TagEditor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3TagEditor.swift; path = Source/ID3TagEditor.swift; sourceTree = "<group>"; };
+		BCDBE288900E310F061D5E148EDFE3B9 /* ID3Version.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3Version.swift; path = Source/ID3Version.swift; sourceTree = "<group>"; };
+		BDBE9C59F56A67E0967712C354C172C5 /* ID3RecordingTimeFrameContentParsingOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3RecordingTimeFrameContentParsingOperation.swift; path = Source/Parse/ID3RecordingTimeFrameContentParsingOperation.swift; sourceTree = "<group>"; };
+		BE6FF29E98D34EDFFC4B22C854EE8F2B /* Pods-spotiflyer-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-spotiflyer-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		C186F9754987F4F372792A13EEEDC65B /* SynchsafeEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SynchsafeEncoder.swift; path = Source/Common/SynchsafeEncoder.swift; sourceTree = "<group>"; };
+		C206D3192FB246FC4B41DA284AE6154F /* ID3FrameHeaderCreatorFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameHeaderCreatorFactory.swift; path = Source/Create/ID3FrameHeaderCreatorFactory.swift; sourceTree = "<group>"; };
+		C34628CA7B8E53F37D116B590124EA8C /* ID3TagEditor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ID3TagEditor.modulemap; sourceTree = "<group>"; };
+		C346A0E11145F69B19F4FD0AACB3FBE9 /* ID3StringEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3StringEncoding.swift; path = Source/Parse/ID3StringEncoding.swift; sourceTree = "<group>"; };
+		C4F45B102D2EFBAD0C0543B0AAFA773F /* ID3AttachedPictureFrameContentParsingOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3AttachedPictureFrameContentParsingOperation.swift; path = Source/Parse/ID3AttachedPictureFrameContentParsingOperation.swift; sourceTree = "<group>"; };
+		C64E79E9145153BE9417116560DEDEB7 /* Mp3FileReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mp3FileReader.swift; path = Source/Mp3/Mp3FileReader.swift; sourceTree = "<group>"; };
+		C70A532556E8B2CF72A95E4924376D93 /* ID3RecordingHourMinuteFrameContentParsingOperationFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3RecordingHourMinuteFrameContentParsingOperationFactory.swift; path = Source/Parse/ID3RecordingHourMinuteFrameContentParsingOperationFactory.swift; sourceTree = "<group>"; };
+		C8648CFF08843E0FC15D7492BB485DA5 /* ID3GenreStringAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3GenreStringAdapter.swift; path = Source/Parse/ID3GenreStringAdapter.swift; sourceTree = "<group>"; };
+		C8B6F8E0F3A01299ABBE2D8ACCE530FC /* ID3RecordingHourMinuteFrameCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3RecordingHourMinuteFrameCreator.swift; path = Source/Create/ID3RecordingHourMinuteFrameCreator.swift; sourceTree = "<group>"; };
+		CB83259F60AEC58B6268FA29A3D1BB3D /* TagBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TagBuilder.swift; path = Source/Tag/TagBuilder.swift; sourceTree = "<group>"; };
+		CDE757B8BF7A32DEEDD4CA0C1905BC96 /* ID3PictureFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3PictureFormat.swift; path = Source/Frame/ID3PictureFormat.swift; sourceTree = "<group>"; };
+		CE2B20C2D9010672BF9F6AD0845ECEA4 /* ID3TagEditor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ID3TagEditor.h; path = Source/ID3TagEditor.h; sourceTree = "<group>"; };
+		D0E5A800586B6B1B83783CACD6F47783 /* FrameFromIntegerContentAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameFromIntegerContentAdapter.swift; path = Source/Create/FrameFromIntegerContentAdapter.swift; sourceTree = "<group>"; };
+		D31037A0935D45D25B6EE02669A24FC0 /* ID3FrameContentCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameContentCreator.swift; path = Source/Create/ID3FrameContentCreator.swift; sourceTree = "<group>"; };
+		D874826224375D3646B09D5656169BA0 /* Pods-spotiflyer-ios-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-spotiflyer-ios-frameworks.sh"; sourceTree = "<group>"; };
+		DCA80771E51D01AA3BF20D865EF7EFA6 /* ID3TagVersionParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3TagVersionParser.swift; path = Source/Parse/ID3TagVersionParser.swift; sourceTree = "<group>"; };
+		E0B33C2C789D925E953E60136DB57E81 /* Pods_spotiflyer_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_spotiflyer_iosTests.framework; path = "Pods-spotiflyer-iosTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E13F8F74482D9DD5E8F45DBEE6F88EA3 /* FrameSizeParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameSizeParser.swift; path = Source/Parse/FrameSizeParser.swift; sourceTree = "<group>"; };
+		E234544B5EFC34500A41B00B74D4F81B /* ID3TagPresence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3TagPresence.swift; path = Source/Tag/ID3TagPresence.swift; sourceTree = "<group>"; };
+		E2A9000DED8EB285C8FDC6404A52AC54 /* Pods_spotiflyer_ios_spotiflyer_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_spotiflyer_ios_spotiflyer_iosUITests.framework; path = "Pods-spotiflyer-ios-spotiflyer-iosUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E47F4EF6E04B44BB56BD314664B40D86 /* ID3FrameContentSizeParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameContentSizeParser.swift; path = Source/Parse/ID3FrameContentSizeParser.swift; sourceTree = "<group>"; };
+		E62AA6DB69A5F543485C98150E78AC66 /* Mp3FileWriter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mp3FileWriter.swift; path = Source/Mp3/Mp3FileWriter.swift; sourceTree = "<group>"; };
+		E759F40D0264D5CCEB0F8C241E4DFB9B /* ID3AttachedPictureFrameConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3AttachedPictureFrameConfiguration.swift; path = Source/Frame/ID3AttachedPictureFrameConfiguration.swift; sourceTree = "<group>"; };
+		E7FBE7E267C8FEA97F34A4A7BA6980BC /* StringToBytesAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringToBytesAdapter.swift; path = Source/Create/StringToBytesAdapter.swift; sourceTree = "<group>"; };
+		EB84F81C2CC65DAA84598545D43735F1 /* ID3TagEditor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ID3TagEditor-Info.plist"; sourceTree = "<group>"; };
+		EE5DF5F35445374F8E4D490F9A7566E9 /* ID3FrameRecordingHourMinute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameRecordingHourMinute.swift; path = Source/Frame/ID3FrameRecordingHourMinute.swift; sourceTree = "<group>"; };
+		F07F5752E13B389CF9A2918ED8204952 /* FrameContentSizeParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameContentSizeParser.swift; path = Source/Parse/FrameContentSizeParser.swift; sourceTree = "<group>"; };
+		F0E48019BF7A9214664C99BE8E6AD420 /* FrameFromStringContentAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameFromStringContentAdapter.swift; path = Source/Create/FrameFromStringContentAdapter.swift; sourceTree = "<group>"; };
+		F19DE89B5E1EA0C71E651F705CC8BDD2 /* ID3TrackPositionFrameContentParsingOperationFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3TrackPositionFrameContentParsingOperationFactory.swift; path = Source/Parse/ID3TrackPositionFrameContentParsingOperationFactory.swift; sourceTree = "<group>"; };
+		F27F546C85BAAA9B7FD01CBFDF341BF6 /* ID3FrameStringContentParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameStringContentParser.swift; path = Source/Parse/ID3FrameStringContentParser.swift; sourceTree = "<group>"; };
+		F3334264B011CA5B42D27370641BC9F6 /* ID3FrameCreatorsFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FrameCreatorsFactory.swift; path = Source/Create/ID3FrameCreatorsFactory.swift; sourceTree = "<group>"; };
+		F397A6366D4FCCA4578E7255C3400299 /* ID3FramesParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FramesParser.swift; path = Source/Parse/ID3FramesParser.swift; sourceTree = "<group>"; };
+		F39FE15F0D27F3DCAF4AD1CBB130377C /* ID3ParsingOperationForID3FrameWithIntegerFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3ParsingOperationForID3FrameWithIntegerFactory.swift; path = Source/Parse/ID3ParsingOperationForID3FrameWithIntegerFactory.swift; sourceTree = "<group>"; };
+		F4F2E0A8B58410D40989822FFF82772F /* FrameHeaderCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameHeaderCreator.swift; path = Source/Create/FrameHeaderCreator.swift; sourceTree = "<group>"; };
+		F4FA500360F2A977134941BFD2815DA4 /* ID3GenreFrameContentParsingOperationFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3GenreFrameContentParsingOperationFactory.swift; path = Source/Parse/ID3GenreFrameContentParsingOperationFactory.swift; sourceTree = "<group>"; };
+		F8581D579E2F0CEE10B21BF66A6C7BD0 /* ID32v2TagBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID32v2TagBuilder.swift; path = Source/Tag/ID32v2TagBuilder.swift; sourceTree = "<group>"; };
+		F85FB63C5F1EF7A170F86A125E4E3093 /* ID3FramesCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FramesCreator.swift; path = Source/Create/ID3FramesCreator.swift; sourceTree = "<group>"; };
+		F903DC08A3EC8B9876EEDFF30D073B57 /* Pods-spotiflyer-ios-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-spotiflyer-ios-umbrella.h"; sourceTree = "<group>"; };
+		F939A781196A1C9A7387C50AAC6D869B /* ID3FramesWithLocalizedContentCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3FramesWithLocalizedContentCreator.swift; path = Source/Create/ID3FramesWithLocalizedContentCreator.swift; sourceTree = "<group>"; };
+		FB2D9C54FA9EBFEAB63A459A37418559 /* PaddingAdder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PaddingAdder.swift; path = Source/Common/PaddingAdder.swift; sourceTree = "<group>"; };
+		FBD230BCD166E2E23098B09A852141DE /* ID3TagToStringAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ID3TagToStringAdapter.swift; path = Source/Tag/ID3TagToStringAdapter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		56CF75577E4292BEE9FA04A2FB562563 /* Frameworks */ = {
+		3DAA8F4F1FAA973A7546F4D9E9B1C876 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79D5C2FE46A602332F31CFBC3FEA7FB4 /* Foundation.framework in Frameworks */,
+				68AC265FAF07FF6131AB5E00C4B56139 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		73B0926A085AA0E098730C6E3B780C2B /* Frameworks */ = {
+		7E298C535ABE7D7AB6874648DC96CF99 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CEA370B23F83F0A7D1115489A0C6E1F /* Foundation.framework in Frameworks */,
+				0CD7F8FE353E35C5B9378FB2BA7E61A9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,17 +364,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD602F8967FDFBA8433761BEA321891F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5550CC1E118AB97AD7C062A36EA573B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		55A90DBEB237009AC77B62215EDBCEB8 /* Targets Support Files */ = {
+		10C54BC025FB8CA360482151EACC365A /* Pods-spotiflyer-ios-spotiflyer-iosUITests */ = {
 			isa = PBXGroup;
 			children = (
-				CC6F274F9D5D0D20827E075A29CB4753 /* Pods-spotiflyer-ios */,
-				ACE4E8789D1C284CCA1AC91F27CE4314 /* Pods-spotiflyer-ios-spotiflyer-iosUITests */,
-				7D592097380C4784E652B3ECE42428C8 /* Pods-spotiflyer-iosTests */,
+				751C8437880278DF9C95A0AA8B612965 /* Pods-spotiflyer-ios-spotiflyer-iosUITests.modulemap */,
+				15507BE7808F22841F04DC64A289B72E /* Pods-spotiflyer-ios-spotiflyer-iosUITests-acknowledgements.markdown */,
+				43568F5B92085B9541EFBE3AC78A4788 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-acknowledgements.plist */,
+				6599A359F5A25FEE828A8D3579239DFB /* Pods-spotiflyer-ios-spotiflyer-iosUITests-dummy.m */,
+				797C298F11D18494C039D4D0D804CBEC /* Pods-spotiflyer-ios-spotiflyer-iosUITests-frameworks.sh */,
+				353AC80A29E8487AD026866A91CDB1DF /* Pods-spotiflyer-ios-spotiflyer-iosUITests-Info.plist */,
+				9582A0FA9C7300AFABB17A496CA8715A /* Pods-spotiflyer-ios-spotiflyer-iosUITests-umbrella.h */,
+				56192EAB702574C002C5E952D88C5BC1 /* Pods-spotiflyer-ios-spotiflyer-iosUITests.debug.xcconfig */,
+				4188BD68D6234B100F5A8D73CAE03E63 /* Pods-spotiflyer-ios-spotiflyer-iosUITests.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Pods-spotiflyer-ios-spotiflyer-iosUITests";
+			path = "Target Support Files/Pods-spotiflyer-ios-spotiflyer-iosUITests";
+			sourceTree = "<group>";
+		};
+		396077ECF98FAD0D3B097EAAC9C6EF8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF74D3535484E7D3CF2B92381EE6F7B1 /* ID3TagEditor.framework */,
+				30902683E67F55EF56FC7DE649140C2F /* Pods_spotiflyer_ios.framework */,
+				E2A9000DED8EB285C8FDC6404A52AC54 /* Pods_spotiflyer_ios_spotiflyer_iosUITests.framework */,
+				E0B33C2C789D925E953E60136DB57E81 /* Pods_spotiflyer_iosTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		472FFF7D3A425F9E966CE3483AEE60F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7C0144D4F18D8D4E90BBAB4A462020B /* ID3TagEditor */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -106,49 +419,28 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7D592097380C4784E652B3ECE42428C8 /* Pods-spotiflyer-iosTests */ = {
+		5D656558D8E88D2F4FBE3DEB2E27297C /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				2786FD6931974AF8B1D56BD1AB819C3D /* Pods-spotiflyer-iosTests.modulemap */,
-				890CD887E2BCE8A05F0E88563EBE2672 /* Pods-spotiflyer-iosTests-acknowledgements.markdown */,
-				1EE27B7CA96CE812BC6B6E16CE4D96EA /* Pods-spotiflyer-iosTests-acknowledgements.plist */,
-				90F04369722DF477FAA285EB7453DD59 /* Pods-spotiflyer-iosTests-dummy.m */,
-				1A95042AD56475979E34DE51A723DB16 /* Pods-spotiflyer-iosTests-Info.plist */,
-				31F73717B7C83535782C24F65169C21A /* Pods-spotiflyer-iosTests-umbrella.h */,
-				FD79E15609D5B02D1F6EECF3F78F72C8 /* Pods-spotiflyer-iosTests.debug.xcconfig */,
-				C58008CEE68F91FDE9DD87640CDD4D22 /* Pods-spotiflyer-iosTests.release.xcconfig */,
+				A6983AC27BF39AD0D5D3A52DA2CBBE74 /* Pods-spotiflyer-ios */,
+				10C54BC025FB8CA360482151EACC365A /* Pods-spotiflyer-ios-spotiflyer-iosUITests */,
+				ECBBB7B7343A7C5BC0F4020066B34597 /* Pods-spotiflyer-iosTests */,
 			);
-			name = "Pods-spotiflyer-iosTests";
-			path = "Target Support Files/Pods-spotiflyer-iosTests";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		ACE4E8789D1C284CCA1AC91F27CE4314 /* Pods-spotiflyer-ios-spotiflyer-iosUITests */ = {
+		A6983AC27BF39AD0D5D3A52DA2CBBE74 /* Pods-spotiflyer-ios */ = {
 			isa = PBXGroup;
 			children = (
-				7A7A9C752DE5024E4985949632A1974E /* Pods-spotiflyer-ios-spotiflyer-iosUITests.modulemap */,
-				91D13547F513CF7539B70DE0D0449BA0 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-acknowledgements.markdown */,
-				B377F139BF53F776F4B3551E4C0A75F7 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-acknowledgements.plist */,
-				B3A0962D52213C8D8383BD3ACD5745A5 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-dummy.m */,
-				9705BBAD6EDDA41BCE5F7B09AE0D5962 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-Info.plist */,
-				5569007849BE36265A92A7BA08017E5D /* Pods-spotiflyer-ios-spotiflyer-iosUITests-umbrella.h */,
-				B1234849CE619123773BED8E2E56F177 /* Pods-spotiflyer-ios-spotiflyer-iosUITests.debug.xcconfig */,
-				E772DD234DC17EB044E9966B010793F0 /* Pods-spotiflyer-ios-spotiflyer-iosUITests.release.xcconfig */,
-			);
-			name = "Pods-spotiflyer-ios-spotiflyer-iosUITests";
-			path = "Target Support Files/Pods-spotiflyer-ios-spotiflyer-iosUITests";
-			sourceTree = "<group>";
-		};
-		CC6F274F9D5D0D20827E075A29CB4753 /* Pods-spotiflyer-ios */ = {
-			isa = PBXGroup;
-			children = (
-				EBA0FC9E5033FC5DB93018DBA4733FD0 /* Pods-spotiflyer-ios.modulemap */,
-				1BA39147D29C7CFEB231445F03C03D12 /* Pods-spotiflyer-ios-acknowledgements.markdown */,
-				46B67514EEA2EB5FC998819433B58BCC /* Pods-spotiflyer-ios-acknowledgements.plist */,
-				1937DBBE63A71FD88F49C8FF00883073 /* Pods-spotiflyer-ios-dummy.m */,
-				7B0FBE0F0814F36640BDE2AB672EF24E /* Pods-spotiflyer-ios-Info.plist */,
-				3B8646E5C57CC636DADE5FC6F25D1979 /* Pods-spotiflyer-ios-umbrella.h */,
-				378605E67C7740F60EEFB5371DB0F390 /* Pods-spotiflyer-ios.debug.xcconfig */,
-				474FAA1FB7C23C8E218E74ADA7196ACD /* Pods-spotiflyer-ios.release.xcconfig */,
+				3A116A7461EB864459834FD5F5C17134 /* Pods-spotiflyer-ios.modulemap */,
+				7DB530B6C2F2F7B29C78F22DA88F24A6 /* Pods-spotiflyer-ios-acknowledgements.markdown */,
+				B016D3B843D1E561334840B09EDD0C52 /* Pods-spotiflyer-ios-acknowledgements.plist */,
+				6BF8CFA5D0741FBA9C9F331558035255 /* Pods-spotiflyer-ios-dummy.m */,
+				D874826224375D3646B09D5656169BA0 /* Pods-spotiflyer-ios-frameworks.sh */,
+				777CA1336C13D9680B54DDD322354C08 /* Pods-spotiflyer-ios-Info.plist */,
+				F903DC08A3EC8B9876EEDFF30D073B57 /* Pods-spotiflyer-ios-umbrella.h */,
+				9B587F1E915EBFE1FD9D26DC326AE395 /* Pods-spotiflyer-ios.debug.xcconfig */,
+				854C131900A3D2F2844372BA1C4C3805 /* Pods-spotiflyer-ios.release.xcconfig */,
 			);
 			name = "Pods-spotiflyer-ios";
 			path = "Target Support Files/Pods-spotiflyer-ios";
@@ -159,8 +451,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				E372EEB5925DC4CFA83026D34B51CB23 /* Products */,
-				55A90DBEB237009AC77B62215EDBCEB8 /* Targets Support Files */,
+				472FFF7D3A425F9E966CE3483AEE60F4 /* Pods */,
+				396077ECF98FAD0D3B097EAAC9C6EF8A /* Products */,
+				5D656558D8E88D2F4FBE3DEB2E27297C /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,24 +465,189 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E372EEB5925DC4CFA83026D34B51CB23 /* Products */ = {
+		D7C0144D4F18D8D4E90BBAB4A462020B /* ID3TagEditor */ = {
 			isa = PBXGroup;
 			children = (
-				30902683E67F55EF56FC7DE649140C2F /* Pods_spotiflyer_ios.framework */,
-				E2A9000DED8EB285C8FDC6404A52AC54 /* Pods_spotiflyer_ios_spotiflyer_iosUITests.framework */,
-				E0B33C2C789D925E953E60136DB57E81 /* Pods_spotiflyer_iosTests.framework */,
+				0DA9ED393B94DC5C7E96C0C63D1AA2D7 /* FrameContentAdapter.swift */,
+				4ECF3E9FDA69E9F9D23FCC17532BCAA0 /* FrameContentParser.swift */,
+				9221E178DD57CE5DD492AA167A38697C /* FrameContentParsingOperation.swift */,
+				0EB0A0EA8F1CCA88234637058EA6552F /* FrameContentSizeCalculator.swift */,
+				F07F5752E13B389CF9A2918ED8204952 /* FrameContentSizeParser.swift */,
+				5D149D2BF397ADD520A2F14672D7AD5B /* FrameFlagsCreator.swift */,
+				D0E5A800586B6B1B83783CACD6F47783 /* FrameFromIntegerContentAdapter.swift */,
+				F0E48019BF7A9214664C99BE8E6AD420 /* FrameFromStringContentAdapter.swift */,
+				B5354BF462018950DB69B94B37AC2B35 /* FrameFromStringContentCreator.swift */,
+				F4F2E0A8B58410D40989822FFF82772F /* FrameHeaderCreator.swift */,
+				6B9314D7B1DAB4F55E869F380EBB7AA5 /* FrameName.swift */,
+				E13F8F74482D9DD5E8F45DBEE6F88EA3 /* FrameSizeParser.swift */,
+				1D3F5EA49C90811C28FC0E1888D1CEAE /* FrameType.swift */,
+				F8581D579E2F0CEE10B21BF66A6C7BD0 /* ID32v2TagBuilder.swift */,
+				1D0F9FFD8B4FD42AB1B4998A0B3F1F28 /* ID32v3TagBuilder.swift */,
+				705573FF0EE1C04097421EDD46441123 /* ID32v4TagBuilder.swift */,
+				E759F40D0264D5CCEB0F8C241E4DFB9B /* ID3AttachedPictureFrameConfiguration.swift */,
+				C4F45B102D2EFBAD0C0543B0AAFA773F /* ID3AttachedPictureFrameContentParsingOperation.swift */,
+				8F91A8536845A887594DD3C21D63AB81 /* ID3AttachedPictureFrameContentParsingOperationFactory.swift */,
+				46355BDC1B9BD493843157C321319628 /* ID3AttachedPictureFrameCreator.swift */,
+				2A41CE01AE3032654EAABFE1DCCF8E02 /* ID3AttachedPicturesFramesCreator.swift */,
+				A4E858B3BB3C99C9124F1CCD70DE62EF /* ID3AttachedPicturesFramesCreatorFactory.swift */,
+				20FA1E2C306C504BDDF66E397C942B00 /* ID3CoupleOfNumbersAdapter.swift */,
+				12956A7B868EAA5D3CF59ECF6F938012 /* ID3DiscPositionFrameContentParsingOperationFactory.swift */,
+				96027DFF66C539FD8DA1F5BDA6C3D480 /* ID3DiscPositionFrameCreator.swift */,
+				1C42C71649384F2AEAFBB86555884587 /* ID3Frame.swift */,
+				776EA7DE3F0F3C2022A42C6C0A555E4F /* ID3FrameAttachedPicture.swift */,
+				338A73613A4E369180796A6A0520DE5C /* ID3FrameConfiguration.swift */,
+				D31037A0935D45D25B6EE02669A24FC0 /* ID3FrameContentCreator.swift */,
+				2B75186C02A601664C86A72AB5D2C8FB /* ID3FrameContentLanguage.swift */,
+				52F0C601C195447D54A205124F2F0456 /* ID3FrameContentParsingOperationFactory.swift */,
+				9691C74B200BF25F87E6701FEE24ED26 /* ID3FrameContentSizeCalculator.swift */,
+				E47F4EF6E04B44BB56BD314664B40D86 /* ID3FrameContentSizeParser.swift */,
+				6C77EBF869175CE268BD368147E7C438 /* ID3FrameCreator.swift */,
+				F3334264B011CA5B42D27370641BC9F6 /* ID3FrameCreatorsFactory.swift */,
+				89B8F34F2031BA03767F7F056AD67E2A /* ID3FrameFlagsCreator.swift */,
+				5679C6537F97F091332AF37F97A11261 /* ID3FrameFromStringContentCreator.swift */,
+				6AEC6E15F1B6733FFAD4F416D341CBE9 /* ID3FrameFromStringContentCreatorWithISO88591EncodingFactory.swift */,
+				AD9DB3677497F231A999970AC4656BE4 /* ID3FrameFromStringContentCreatorWithUTF16EncodingFactory.swift */,
+				0F17BBC61DDBB0C862248B4B2BE3BC3F /* ID3FrameGenre.swift */,
+				5E20F734A34F6FCBB49499282062BB72 /* ID3FrameHeaderCreator.swift */,
+				C206D3192FB246FC4B41DA284AE6154F /* ID3FrameHeaderCreatorFactory.swift */,
+				58F0D746BDC26CC336FA14625D0C2C2B /* ID3FrameParser.swift */,
+				99C4C28399EE25BA3CCB5FBE417DCA0C /* ID3FramePartofTotal.swift */,
+				133FA21D468F9ABC612665E1E80E67E1 /* ID3FrameRecordingDateTime.swift */,
+				489AD54BB8754322889287AC800DF87C /* ID3FrameRecordingDayMonth.swift */,
+				EE5DF5F35445374F8E4D490F9A7566E9 /* ID3FrameRecordingHourMinute.swift */,
+				F85FB63C5F1EF7A170F86A125E4E3093 /* ID3FramesCreator.swift */,
+				97E1B6EA10FBDDC4E24CA52AF513DEFD /* ID3FrameSizeParser.swift */,
+				F397A6366D4FCCA4578E7255C3400299 /* ID3FramesParser.swift */,
+				F27F546C85BAAA9B7FD01CBFDF341BF6 /* ID3FrameStringContentParser.swift */,
+				A6D38EBFA5C74E7EAFD44687761E1253 /* ID3FrameStringContentParserFactory.swift */,
+				974951782B8F440A81DDF0AEA00A6D76 /* ID3FrameStringContentParsingOperation.swift */,
+				A1F80776B05F88859607657657545EE5 /* ID3FrameStringContentParsingOperationFactory.swift */,
+				0C0CC38161D1718A9BF89152C95777E2 /* ID3FrameStringEncodingDetector.swift */,
+				F939A781196A1C9A7387C50AAC6D869B /* ID3FramesWithLocalizedContentCreator.swift */,
+				46D4F4AF7AA999502CC1C94F00DFED8A /* ID3FramesWithLocalizedContentCreatorFactory.swift */,
+				501F173C35E85F4F64EBC288ADA02094 /* ID3FrameWithIntegerContent.swift */,
+				6873FF88ED986461EC59FE23E79F1B89 /* ID3FrameWithLocalizedContent.swift */,
+				5E1E0B6F2F3164F105C05743585F64BD /* ID3FrameWithStringContent.swift */,
+				46F5B4ACA4948F7630AD56D80146EFE5 /* ID3Genre.swift */,
+				F4FA500360F2A977134941BFD2815DA4 /* ID3GenreFrameContentParsingOperationFactory.swift */,
+				64E5088D63D858F3E62F300074986A06 /* ID3GenreFrameCreator.swift */,
+				C8648CFF08843E0FC15D7492BB485DA5 /* ID3GenreStringAdapter.swift */,
+				7A1CDA152C66FEF4DC444575BF696E2E /* ID3ISO88591StringToByteAdapter.swift */,
+				79BA2D21508A7E049F4DED5D0CB48C3D /* ID3iTunesFrameCreatorsFactory.swift */,
+				9B814CC783084AF41F420E3B57468F48 /* ID3LocalizedFrameContentParsingOperation.swift */,
+				7B6389C4C94A90227EE2014514FC4242 /* ID3LocalizedFrameContentParsingOperationFactory.swift */,
+				8FB85702ED840B57381A7DBBD958C9CB /* ID3LocalizedFrameCreator.swift */,
+				F39FE15F0D27F3DCAF4AD1CBB130377C /* ID3ParsingOperationForID3FrameWithIntegerFactory.swift */,
+				527FEFA9EA96ACE8EC81B4415E5B2D5A /* ID3ParsingOperationForID3FrameWithStringFactory.swift */,
+				B3FC908460B1A11FCF14C74A4A291DF8 /* ID3PartOfTotalStringAdapter.swift */,
+				CDE757B8BF7A32DEEDD4CA0C1905BC96 /* ID3PictureFormat.swift */,
+				AE1EFD30F9BCC81592A7298375AED690 /* ID3PictureType.swift */,
+				AC63F429B0A21BEB3FD16F9E14C29129 /* ID3PictureTypeAdapter.swift */,
+				6C79606B7B3331D32F2F9B9C985B8865 /* ID3RecordingDateTimeFrameCreator.swift */,
+				266DF68805EB158DB7AD78413CF6C43B /* ID3RecordingDayMonthContentParsingOperationFactory.swift */,
+				159BC2AD51C463998F574EEAC257CAFF /* ID3RecordingDayMonthFrameCreator.swift */,
+				C70A532556E8B2CF72A95E4924376D93 /* ID3RecordingHourMinuteFrameContentParsingOperationFactory.swift */,
+				C8B6F8E0F3A01299ABBE2D8ACCE530FC /* ID3RecordingHourMinuteFrameCreator.swift */,
+				BDBE9C59F56A67E0967712C354C172C5 /* ID3RecordingTimeFrameContentParsingOperation.swift */,
+				A1D4DD470859399E148679E3CBB72E44 /* ID3RecordingTimeFrameContentParsingOperationFactory.swift */,
+				3D2C8C39591115DA1797ECCE331FAB38 /* ID3RecordingTimesFrameCreatorsFactory.swift */,
+				C346A0E11145F69B19F4FD0AACB3FBE9 /* ID3StringEncoding.swift */,
+				5EB2939E2AD5C941CF09853E442E00AC /* ID3StringEncodingConverter.swift */,
+				2722314BF22C848DF927F5026DD48D56 /* ID3Tag.swift */,
+				401A79E018634B80D61D7383175741EA /* ID3TagConfiguration.swift */,
+				35DA38D72DE5E812B7B9F53D8390A58C /* ID3TagCreator.swift */,
+				2806FD4C4D3D5CA3DBF162906B26A630 /* ID3TagCreatorFactory.swift */,
+				CE2B20C2D9010672BF9F6AD0845ECEA4 /* ID3TagEditor.h */,
+				B62E194C1B7E18688D951624E9590FE3 /* ID3TagEditor.swift */,
+				7A68B1CD4AAB45143CBBE3B4A5F196D4 /* ID3TagEditorError.swift */,
+				99630F69E75C931AFB83EDE40F28FF32 /* ID3TagHeaderCreator.swift */,
+				3EB657D46962CA3468DDF44175CBDE73 /* ID3TagParser.swift */,
+				35F2E586CC5CE454B93E01DE5ED7E87F /* ID3TagParserFactory.swift */,
+				E234544B5EFC34500A41B00B74D4F81B /* ID3TagPresence.swift */,
+				98A7743E7B4996E63167A96E46AE0CB4 /* ID3TagProperties.swift */,
+				81A5DEE037A1F94364304047F6A3CBFA /* ID3TagSizeParser.swift */,
+				FBD230BCD166E2E23098B09A852141DE /* ID3TagToStringAdapter.swift */,
+				DCA80771E51D01AA3BF20D865EF7EFA6 /* ID3TagVersionParser.swift */,
+				1F4EB2071F4F9F42B5261C7332BADE63 /* ID3TimestampCreator.swift */,
+				F19DE89B5E1EA0C71E651F705CC8BDD2 /* ID3TrackPositionFrameContentParsingOperationFactory.swift */,
+				949708668BBDC6A3067D8AD79BEC0B4A /* ID3TrackPositionFrameCreator.swift */,
+				74E797FED6586EBD85D656FE2B7B7620 /* ID3UTF16StringToByteAdapter.swift */,
+				BCDBE288900E310F061D5E148EDFE3B9 /* ID3Version.swift */,
+				72CAF1A474C5BCEB1AAF8638CB6A428D /* LocalizedFrameCreator.swift */,
+				C64E79E9145153BE9417116560DEDEB7 /* Mp3FileReader.swift */,
+				E62AA6DB69A5F543485C98150E78AC66 /* Mp3FileWriter.swift */,
+				A5FAF7028F2267D36B3A50E8F85A0FF2 /* Mp3WithID3TagBuilder.swift */,
+				FB2D9C54FA9EBFEAB63A459A37418559 /* PaddingAdder.swift */,
+				127010C6FE1DA98B2C9D1F8826EBA3CB /* PaddingAdderToEndOfContentUsingNullChar.swift */,
+				A166CE5C70E6E4D3BFAEB17AC6681328 /* PaddingRemover.swift */,
+				0FDF6A6F346FF0775B7BF44F51D29A9E /* PaddingRemoverUsingTrimming.swift */,
+				7DFACC020DD8053554CEE581CE388E95 /* PartOfTotalStringAdapter.swift */,
+				9FE3E77AE3E3A8B3BA2CCF89E6F843B5 /* PictureTypeAdapter.swift */,
+				E7FBE7E267C8FEA97F34A4A7BA6980BC /* StringToBytesAdapter.swift */,
+				C186F9754987F4F372792A13EEEDC65B /* SynchsafeEncoder.swift */,
+				47BC7989A1EF641FBBA434AC36F817DC /* SynchsafeIntegerDecoder.swift */,
+				17DBCF4AF31A2105AD86B7777B8EDC81 /* SynchsafeIntegerEncoder.swift */,
+				CB83259F60AEC58B6268FA29A3D1BB3D /* TagBuilder.swift */,
+				08FC8FB2A8F493B4213BE5FF61709885 /* TagPresence.swift */,
+				2E994523F19E277413CAA0B9C95DDA00 /* TagSizeParser.swift */,
+				9D0915FD0BB00698DC9A004C5A2EE593 /* TagVersionParser.swift */,
+				560EB215A422FD57ACE00D5F90B003D8 /* TimestampCreator.swift */,
+				784DA84D301137BB8C8BA6BB9578FB1D /* UInt32ToByteArrayAdapter.swift */,
+				4A308CCCF62DAFCDD6FACC7191868ECF /* UInt32ToByteArrayAdapterUsingUnsafePointer.swift */,
+				E4A570C9B18EF4D6B642644DD065231A /* Support Files */,
 			);
-			name = Products;
+			name = ID3TagEditor;
+			path = ID3TagEditor;
+			sourceTree = "<group>";
+		};
+		E4A570C9B18EF4D6B642644DD065231A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C34628CA7B8E53F37D116B590124EA8C /* ID3TagEditor.modulemap */,
+				410DEA0A3CEBCFD03386A1233D4FBB73 /* ID3TagEditor-dummy.m */,
+				EB84F81C2CC65DAA84598545D43735F1 /* ID3TagEditor-Info.plist */,
+				5E778856F9128DA03C5701370DDBF480 /* ID3TagEditor-prefix.pch */,
+				42D8A8E344A5BF22ED09116920AEC058 /* ID3TagEditor-umbrella.h */,
+				8DA9378FF3B0A6B4183FF904B02C9D74 /* ID3TagEditor.debug.xcconfig */,
+				29BD664DE68EA93B353F338C8D5EF9EE /* ID3TagEditor.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ID3TagEditor";
+			sourceTree = "<group>";
+		};
+		ECBBB7B7343A7C5BC0F4020066B34597 /* Pods-spotiflyer-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADB36375500DB20158D736FD436A167A /* Pods-spotiflyer-iosTests.modulemap */,
+				39A61CAB13755BA0922E1FF6F72AD95E /* Pods-spotiflyer-iosTests-acknowledgements.markdown */,
+				8525549DCD027165A84855E97FD6FA04 /* Pods-spotiflyer-iosTests-acknowledgements.plist */,
+				A85EE241C86AE91667BA39157A66E21E /* Pods-spotiflyer-iosTests-dummy.m */,
+				91E480E71D7120B5858B152603BA32B4 /* Pods-spotiflyer-iosTests-Info.plist */,
+				30A97B0B5A2C1A534BF8AFA48DFAD39B /* Pods-spotiflyer-iosTests-umbrella.h */,
+				2C56F142B3EC2D62D329CCC46513586B /* Pods-spotiflyer-iosTests.debug.xcconfig */,
+				BE6FF29E98D34EDFFC4B22C854EE8F2B /* Pods-spotiflyer-iosTests.release.xcconfig */,
+			);
+			name = "Pods-spotiflyer-iosTests";
+			path = "Target Support Files/Pods-spotiflyer-iosTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		07F78CB2B293AE4D3B47BC1294D7D760 /* Headers */ = {
+		347C75C0261A65EA89D166DC73CA81FE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5977F93610078B3DA385B4ECF9922A4 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-umbrella.h in Headers */,
+				156CC8F3D18748F603E88E99714D8A87 /* ID3TagEditor-umbrella.h in Headers */,
+				DBDD7543D717F7C5DE62483521C328B1 /* ID3TagEditor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60F90D2DC8E749FC71A4FAA2623ABD4E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				533C2D26F97DD39B36DBC3439CC63057 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,11 +659,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FDD8CCA25BEE3F68FFCAC10A3DCFEFDD /* Headers */ = {
+		E209FFA8BB1124A1F8996FE955A2839B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4DC71FC53ECBB27CDC26A4E1662A29A /* Pods-spotiflyer-ios-umbrella.h in Headers */,
+				E034990F8110B3DB834BE7BCFD7E22C4 /* Pods-spotiflyer-ios-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +682,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				65876381B457CC6974D10D473377B314 /* PBXTargetDependency */,
+				819F3F22DB5B50246E4ED750BA71CC48 /* PBXTargetDependency */,
 			);
 			name = "Pods-spotiflyer-iosTests";
 			productName = "Pods-spotiflyer-iosTests";
@@ -233,16 +691,17 @@
 		};
 		44FB1BB20ADE3A532938636DCF43BD97 /* Pods-spotiflyer-ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 82F0106C3AB66AC9010514D3949D53ED /* Build configuration list for PBXNativeTarget "Pods-spotiflyer-ios" */;
+			buildConfigurationList = 1F0E5B06EDDCF6A99F042253EB376722 /* Build configuration list for PBXNativeTarget "Pods-spotiflyer-ios" */;
 			buildPhases = (
-				FDD8CCA25BEE3F68FFCAC10A3DCFEFDD /* Headers */,
-				57D32E4D058203D8F1F9B13247130524 /* Sources */,
-				73B0926A085AA0E098730C6E3B780C2B /* Frameworks */,
-				A767558AEBEB32047A598D5F3C01510F /* Resources */,
+				E209FFA8BB1124A1F8996FE955A2839B /* Headers */,
+				0C5C628388BA2956BABBB09FDB949B6E /* Sources */,
+				3DAA8F4F1FAA973A7546F4D9E9B1C876 /* Frameworks */,
+				229ED0024D7936B3403602E9338EE090 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0474025C8342F53FB391D54439A26655 /* PBXTargetDependency */,
 			);
 			name = "Pods-spotiflyer-ios";
 			productName = "Pods-spotiflyer-ios";
@@ -251,20 +710,39 @@
 		};
 		D7E9DE2209AD05DC2B7E7D3D1EF67E2F /* Pods-spotiflyer-ios-spotiflyer-iosUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A227C99641C7EE4208CE417AAAA598C5 /* Build configuration list for PBXNativeTarget "Pods-spotiflyer-ios-spotiflyer-iosUITests" */;
+			buildConfigurationList = 9E214CD99DFE66C2D9A1486AF5E73755 /* Build configuration list for PBXNativeTarget "Pods-spotiflyer-ios-spotiflyer-iosUITests" */;
 			buildPhases = (
-				07F78CB2B293AE4D3B47BC1294D7D760 /* Headers */,
-				D2DDB41B288ED4AD47BF02BFBB717003 /* Sources */,
-				56CF75577E4292BEE9FA04A2FB562563 /* Frameworks */,
-				9BFA3D4D77DFAE8DFBB0B29A02178E33 /* Resources */,
+				60F90D2DC8E749FC71A4FAA2623ABD4E /* Headers */,
+				E904866406A589EE65D798A753A2851E /* Sources */,
+				7E298C535ABE7D7AB6874648DC96CF99 /* Frameworks */,
+				29D5D1747819C977CAD48CA853992358 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F08C76E082E71F988C9D74BEF0CD94A5 /* PBXTargetDependency */,
+			);
+			name = "Pods-spotiflyer-ios-spotiflyer-iosUITests";
+			productName = "Pods-spotiflyer-ios-spotiflyer-iosUITests";
+			productReference = E2A9000DED8EB285C8FDC6404A52AC54 /* Pods_spotiflyer_ios_spotiflyer_iosUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EC62014506C53A9BFE30C82CF896C217 /* ID3TagEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DCF25F02E4FAFBFF7A09ABBF095BCD1 /* Build configuration list for PBXNativeTarget "ID3TagEditor" */;
+			buildPhases = (
+				347C75C0261A65EA89D166DC73CA81FE /* Headers */,
+				8133008323F9E5A6DD82DFB2CB4BD2DE /* Sources */,
+				FD602F8967FDFBA8433761BEA321891F /* Frameworks */,
+				35EA635D1F08B88047B5B9CD61A8DB7B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-spotiflyer-ios-spotiflyer-iosUITests";
-			productName = "Pods-spotiflyer-ios-spotiflyer-iosUITests";
-			productReference = E2A9000DED8EB285C8FDC6404A52AC54 /* Pods_spotiflyer_ios_spotiflyer_iosUITests.framework */;
+			name = ID3TagEditor;
+			productName = ID3TagEditor;
+			productReference = AF74D3535484E7D3CF2B92381EE6F7B1 /* ID3TagEditor.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -274,7 +752,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 9.3";
@@ -285,10 +763,11 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = E372EEB5925DC4CFA83026D34B51CB23 /* Products */;
+			productRefGroup = 396077ECF98FAD0D3B097EAAC9C6EF8A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				EC62014506C53A9BFE30C82CF896C217 /* ID3TagEditor */,
 				44FB1BB20ADE3A532938636DCF43BD97 /* Pods-spotiflyer-ios */,
 				D7E9DE2209AD05DC2B7E7D3D1EF67E2F /* Pods-spotiflyer-ios-spotiflyer-iosUITests */,
 				09F8BE3DD077D072FD1C54726E1350DE /* Pods-spotiflyer-iosTests */,
@@ -297,14 +776,21 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9BFA3D4D77DFAE8DFBB0B29A02178E33 /* Resources */ = {
+		229ED0024D7936B3403602E9338EE090 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A767558AEBEB32047A598D5F3C01510F /* Resources */ = {
+		29D5D1747819C977CAD48CA853992358 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35EA635D1F08B88047B5B9CD61A8DB7B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,6 +807,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0C5C628388BA2956BABBB09FDB949B6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82CED6248F411CA96253022B799780C5 /* Pods-spotiflyer-ios-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		35201B060EFAECF8F5148D0D5BC971D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -329,35 +823,283 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		57D32E4D058203D8F1F9B13247130524 /* Sources */ = {
+		8133008323F9E5A6DD82DFB2CB4BD2DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				741E794B9A17867CE58F7DB8422F012C /* Pods-spotiflyer-ios-dummy.m in Sources */,
+				309FF2529ADDE2BB62CBCDB294FAC6B2 /* FrameContentAdapter.swift in Sources */,
+				4A05573086670492DB057270C44F4DC0 /* FrameContentParser.swift in Sources */,
+				6FF7A05D466F45FE67ED1FC30868E220 /* FrameContentParsingOperation.swift in Sources */,
+				2673531CADE4C5DC0EDD650DE250573D /* FrameContentSizeCalculator.swift in Sources */,
+				E5142F9E513E954503B618DB0234D54E /* FrameContentSizeParser.swift in Sources */,
+				63442C13E771954C9AA43691BC759FAA /* FrameFlagsCreator.swift in Sources */,
+				038E2576F726C7ED4E02BF65BEEAA6CA /* FrameFromIntegerContentAdapter.swift in Sources */,
+				0B9DC6D77A504D4B7035D6C3F8A781CF /* FrameFromStringContentAdapter.swift in Sources */,
+				A4B1D1B22B856724C94CA620CA65BBEF /* FrameFromStringContentCreator.swift in Sources */,
+				B7C89BDB695E470C784EF1AB05311CA8 /* FrameHeaderCreator.swift in Sources */,
+				4CEF17D607F8E1226D5A97C44D913755 /* FrameName.swift in Sources */,
+				BD20739A8DCAAEC329098B8A08B6DE1B /* FrameSizeParser.swift in Sources */,
+				8E2A82B34F773EDC5C5B7E60F332257B /* FrameType.swift in Sources */,
+				D214F602F3B12AF4D007C76FDEF85E80 /* ID32v2TagBuilder.swift in Sources */,
+				F875BF570244692C892C2DF045D060F1 /* ID32v3TagBuilder.swift in Sources */,
+				EED881EB648D400DEAFF61B61371D2FA /* ID32v4TagBuilder.swift in Sources */,
+				13CE5412963146CA020323B2F2C85259 /* ID3AttachedPictureFrameConfiguration.swift in Sources */,
+				37CC0C5711E4E223593AAE6E29D007BE /* ID3AttachedPictureFrameContentParsingOperation.swift in Sources */,
+				01012B89410A2B4E2EEDF1123AC6E2F8 /* ID3AttachedPictureFrameContentParsingOperationFactory.swift in Sources */,
+				961F4731E695696678B36132FEFF149A /* ID3AttachedPictureFrameCreator.swift in Sources */,
+				861814FC4D68DD8ED44152AD4B63A56E /* ID3AttachedPicturesFramesCreator.swift in Sources */,
+				39558D175E81829B7CAE62C606C7E297 /* ID3AttachedPicturesFramesCreatorFactory.swift in Sources */,
+				CD33B54728B503AAF8DFEA8DC2E706F1 /* ID3CoupleOfNumbersAdapter.swift in Sources */,
+				F844E750BFE513FF971B037618DF5E6A /* ID3DiscPositionFrameContentParsingOperationFactory.swift in Sources */,
+				2B5F2BED0AD322F9470C58EB163AB51E /* ID3DiscPositionFrameCreator.swift in Sources */,
+				41591DC8EAFE7FA0882AB4F604C38BA9 /* ID3Frame.swift in Sources */,
+				772121F571CF7B0BF3EC6A4533866153 /* ID3FrameAttachedPicture.swift in Sources */,
+				9073843C4A9B53368158192427E743AA /* ID3FrameConfiguration.swift in Sources */,
+				3C83C61F2D580DA4060EC89EFE282877 /* ID3FrameContentCreator.swift in Sources */,
+				036AEBBBCC8ED43CF465C609D7B769E5 /* ID3FrameContentLanguage.swift in Sources */,
+				1B55B8469DDA12169CEEAFE7DFB45359 /* ID3FrameContentParsingOperationFactory.swift in Sources */,
+				4D05E64B3E702742CF8C222FF3E2767D /* ID3FrameContentSizeCalculator.swift in Sources */,
+				481385E538A7B6CE195B9745D2C606F1 /* ID3FrameContentSizeParser.swift in Sources */,
+				B7E9E90A06664C1557F30F33485754FF /* ID3FrameCreator.swift in Sources */,
+				6327773CA8146031E7B0CF48A2EE1C5E /* ID3FrameCreatorsFactory.swift in Sources */,
+				F4CAC612412915CA5443CE50A2B0C567 /* ID3FrameFlagsCreator.swift in Sources */,
+				31C034335567E148C2364E91ACEA7526 /* ID3FrameFromStringContentCreator.swift in Sources */,
+				B9BC2E9F4B8875FC998C21C0DAB358A0 /* ID3FrameFromStringContentCreatorWithISO88591EncodingFactory.swift in Sources */,
+				1AF333C9C090E4F9A5B0EBE26F15F215 /* ID3FrameFromStringContentCreatorWithUTF16EncodingFactory.swift in Sources */,
+				BAC943646DDD37AA13A0AE3051D88CD8 /* ID3FrameGenre.swift in Sources */,
+				B216151EAC0A40FBD5216C9C37B1C05F /* ID3FrameHeaderCreator.swift in Sources */,
+				CD4E9642EB9F121F302B1DEFE4775F01 /* ID3FrameHeaderCreatorFactory.swift in Sources */,
+				58F4E231D84775B7507B712C5735608C /* ID3FrameParser.swift in Sources */,
+				914EA89DA82970CCC5546F4E3A7E2957 /* ID3FramePartofTotal.swift in Sources */,
+				1F94F9F8BBDA14D90D071C17F4EE3019 /* ID3FrameRecordingDateTime.swift in Sources */,
+				38AB7A376B72EBC2ED43843B677B927F /* ID3FrameRecordingDayMonth.swift in Sources */,
+				FA9D09200A06308ADA79883866055A19 /* ID3FrameRecordingHourMinute.swift in Sources */,
+				3DCB6FE3FA90885E72753058AA9A815B /* ID3FramesCreator.swift in Sources */,
+				78B7743827B5808BDD360B6270EA870C /* ID3FrameSizeParser.swift in Sources */,
+				BFA94E721D25187699FDE101286089E3 /* ID3FramesParser.swift in Sources */,
+				AB551ED4CC7E1A321C9C06FAFCEAEE0A /* ID3FrameStringContentParser.swift in Sources */,
+				F05558635D7BADCC6DEA04DB4FD95319 /* ID3FrameStringContentParserFactory.swift in Sources */,
+				2D3EA338660D6EFAAAF937FFFC8BF8B7 /* ID3FrameStringContentParsingOperation.swift in Sources */,
+				A31C1B400AD41A918A4C5DEC3ACD43D7 /* ID3FrameStringContentParsingOperationFactory.swift in Sources */,
+				70C774508AE38A8F944DB87160056C62 /* ID3FrameStringEncodingDetector.swift in Sources */,
+				2D1F630C9096652264523640EB470696 /* ID3FramesWithLocalizedContentCreator.swift in Sources */,
+				AA699A38B0E86AB0BF2629CB4076EB20 /* ID3FramesWithLocalizedContentCreatorFactory.swift in Sources */,
+				F0C86E50DD1B320226E5C5EA40C961D6 /* ID3FrameWithIntegerContent.swift in Sources */,
+				D40A4DF03745290B63343A8F64B68E03 /* ID3FrameWithLocalizedContent.swift in Sources */,
+				053F15F06C15112DA9EFCBCED8B2C347 /* ID3FrameWithStringContent.swift in Sources */,
+				D4908467C60ACC0B7B9D29ECA8D591B7 /* ID3Genre.swift in Sources */,
+				8DBA0F4AA72F598B5B877DFC91225F54 /* ID3GenreFrameContentParsingOperationFactory.swift in Sources */,
+				6D953430D80931DAB958E9050DA95012 /* ID3GenreFrameCreator.swift in Sources */,
+				42481849B69B69672935D1E478501A1B /* ID3GenreStringAdapter.swift in Sources */,
+				9A6D95948CF41C95378A827B36304DB3 /* ID3ISO88591StringToByteAdapter.swift in Sources */,
+				4C556F8445E8624DBCD78A1F16B51B52 /* ID3iTunesFrameCreatorsFactory.swift in Sources */,
+				B77829574C47A24904AA3C8CDEA74995 /* ID3LocalizedFrameContentParsingOperation.swift in Sources */,
+				BB0A1E4294D203B3250E4CECD752B0A9 /* ID3LocalizedFrameContentParsingOperationFactory.swift in Sources */,
+				041082100F0DC961443F7FAFFC6038F8 /* ID3LocalizedFrameCreator.swift in Sources */,
+				08402740468028A921BD7F3C463773A7 /* ID3ParsingOperationForID3FrameWithIntegerFactory.swift in Sources */,
+				A77AFEBD3C1C2E260665B129088696DC /* ID3ParsingOperationForID3FrameWithStringFactory.swift in Sources */,
+				1244F0968015638279D3FA0546475C2A /* ID3PartOfTotalStringAdapter.swift in Sources */,
+				0E31AD5E5FFBB436960ED4913371A168 /* ID3PictureFormat.swift in Sources */,
+				7BED447B26E1AD1E610D5CF1A3BE02C8 /* ID3PictureType.swift in Sources */,
+				E9075A70BDCEC8E663F04986AF87517C /* ID3PictureTypeAdapter.swift in Sources */,
+				DFA51B407B1C6FE092198AF6A65223E5 /* ID3RecordingDateTimeFrameCreator.swift in Sources */,
+				B69CDF642A6FBBEEE3571A9670FED451 /* ID3RecordingDayMonthContentParsingOperationFactory.swift in Sources */,
+				89040A773E71EBD909D38F5DDDA4B49F /* ID3RecordingDayMonthFrameCreator.swift in Sources */,
+				6166809F0AF39DF270D791D4DC50A855 /* ID3RecordingHourMinuteFrameContentParsingOperationFactory.swift in Sources */,
+				C5DC1127F196A2D6BDCE3BA5ED4656E2 /* ID3RecordingHourMinuteFrameCreator.swift in Sources */,
+				A5F0D13DD8C2F182F7E4B43EF39AD791 /* ID3RecordingTimeFrameContentParsingOperation.swift in Sources */,
+				E34CA6FC07C93E023F427586F00C5134 /* ID3RecordingTimeFrameContentParsingOperationFactory.swift in Sources */,
+				0A47AEBA0E98814947B429997B59C65D /* ID3RecordingTimesFrameCreatorsFactory.swift in Sources */,
+				3DC08FF118146DEFCD03A671612168F9 /* ID3StringEncoding.swift in Sources */,
+				73A80675FC2B1383ABBEFB56BBC2EA55 /* ID3StringEncodingConverter.swift in Sources */,
+				11B350DB30970000DF1AB7635B76E494 /* ID3Tag.swift in Sources */,
+				CA90F8E21F0ACD18215694A6DFED9547 /* ID3TagConfiguration.swift in Sources */,
+				FFEBAC6D46C0CD93F3D1B3ABB450B7C5 /* ID3TagCreator.swift in Sources */,
+				D162F1BDEF8C67EAE020DCE8E08FB905 /* ID3TagCreatorFactory.swift in Sources */,
+				AB49C905A473C3D04CB220A4FD621212 /* ID3TagEditor-dummy.m in Sources */,
+				D689259F8B471BA28FAA17A5A40AEE3C /* ID3TagEditor.swift in Sources */,
+				A6820F215342E38DC0B61F06F131DFC5 /* ID3TagEditorError.swift in Sources */,
+				0A00C5871EA6A9805319E4D8FA99C04C /* ID3TagHeaderCreator.swift in Sources */,
+				B4586D4FE41F6ECFCF1A592FC97538F4 /* ID3TagParser.swift in Sources */,
+				D6AE72B0FF7A9FB976158B33C254BAB0 /* ID3TagParserFactory.swift in Sources */,
+				6EC5BE8047F554BAED0110990D99B127 /* ID3TagPresence.swift in Sources */,
+				D4DE77417C2095AF05E50850920B14C4 /* ID3TagProperties.swift in Sources */,
+				CFA1A540FBF5FF2028D1C3F28447215A /* ID3TagSizeParser.swift in Sources */,
+				D06367D495319699C0112B65E462DE8F /* ID3TagToStringAdapter.swift in Sources */,
+				52BB24E5B459FEBBC3871F68D7F2BA13 /* ID3TagVersionParser.swift in Sources */,
+				A35A127AD9C2FCE47E9B9D3620E3B55F /* ID3TimestampCreator.swift in Sources */,
+				8D04EB661A3803AE4793E10E8480ECBF /* ID3TrackPositionFrameContentParsingOperationFactory.swift in Sources */,
+				B2D703D64EF210D817B2B3DB8F748F0D /* ID3TrackPositionFrameCreator.swift in Sources */,
+				D78916FCD514941645164D27CEE0149D /* ID3UTF16StringToByteAdapter.swift in Sources */,
+				669A6AD5FEEBACCD6A8B4EA8E151E4EA /* ID3Version.swift in Sources */,
+				854B4BB62A7824AAE06B72B0F3980821 /* LocalizedFrameCreator.swift in Sources */,
+				8B1457803E68D05C837B7069B7C8F1DC /* Mp3FileReader.swift in Sources */,
+				AF4A63E23ADF415073B99AD5167DB227 /* Mp3FileWriter.swift in Sources */,
+				D2865E4D2CB559D3C6CD8C689FF75448 /* Mp3WithID3TagBuilder.swift in Sources */,
+				4F40DB896BD5269E376A6FF4B20B8799 /* PaddingAdder.swift in Sources */,
+				AA4E6C14C1E5A81F9D7886263952906B /* PaddingAdderToEndOfContentUsingNullChar.swift in Sources */,
+				E0477C16FAADCCDD3862710232D70BFF /* PaddingRemover.swift in Sources */,
+				99FF7483B7252FCD26EDEA1A7102B0D5 /* PaddingRemoverUsingTrimming.swift in Sources */,
+				3207F33F4B9C458E15A59C4C1500ACD1 /* PartOfTotalStringAdapter.swift in Sources */,
+				5A854FFCF501ADCBDE3150C8A547A758 /* PictureTypeAdapter.swift in Sources */,
+				EBF60225BBBE3FFA3B4CB105116126C4 /* StringToBytesAdapter.swift in Sources */,
+				069BEC094846E233ED7FB2A6D6357D7D /* SynchsafeEncoder.swift in Sources */,
+				C86E63780FA3EF60D11CDCE0474BFCD3 /* SynchsafeIntegerDecoder.swift in Sources */,
+				5E36EDD75B837C224705FD7F7FFC4EA1 /* SynchsafeIntegerEncoder.swift in Sources */,
+				6EE5C1ABBEEEC6DAF92B9D267FDF1069 /* TagBuilder.swift in Sources */,
+				50E428266B1BFCC99BAEC6FB96275177 /* TagPresence.swift in Sources */,
+				1CC4BDD7DC4B71117C94EE7619EC9F26 /* TagSizeParser.swift in Sources */,
+				EC23768F544094E1E82879761AB0921E /* TagVersionParser.swift in Sources */,
+				847E9ED012A8BF8EE750FF125AC39871 /* TimestampCreator.swift in Sources */,
+				046505BAF9623489D31E4906D1BF8EC0 /* UInt32ToByteArrayAdapter.swift in Sources */,
+				52CB1AA1223D14BA6CE29019B9DF1D93 /* UInt32ToByteArrayAdapterUsingUnsafePointer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D2DDB41B288ED4AD47BF02BFBB717003 /* Sources */ = {
+		E904866406A589EE65D798A753A2851E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E43371C24688791D637AB54812DE5030 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-dummy.m in Sources */,
+				C77E41F1A0FA590A3B3DE97E3B55ADF2 /* Pods-spotiflyer-ios-spotiflyer-iosUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		65876381B457CC6974D10D473377B314 /* PBXTargetDependency */ = {
+		0474025C8342F53FB391D54439A26655 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ID3TagEditor;
+			target = EC62014506C53A9BFE30C82CF896C217 /* ID3TagEditor */;
+			targetProxy = 5E8CFA290896B145957AF05689749563 /* PBXContainerItemProxy */;
+		};
+		819F3F22DB5B50246E4ED750BA71CC48 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-spotiflyer-ios";
 			target = 44FB1BB20ADE3A532938636DCF43BD97 /* Pods-spotiflyer-ios */;
-			targetProxy = ED3703FC1A65BDE8EEC5D9B1112E391F /* PBXContainerItemProxy */;
+			targetProxy = 88516E934E5B07D3A21046851D0B1DD6 /* PBXContainerItemProxy */;
+		};
+		F08C76E082E71F988C9D74BEF0CD94A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ID3TagEditor;
+			target = EC62014506C53A9BFE30C82CF896C217 /* ID3TagEditor */;
+			targetProxy = B8020CC5123BC45E3053B75187234FA5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+		0086F7067AE689817B8BE04562805740 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE6FF29E98D34EDFFC4B22C854EE8F2B /* Pods-spotiflyer-iosTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-spotiflyer-iosTests/Pods-spotiflyer-iosTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-spotiflyer-iosTests/Pods-spotiflyer-iosTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		02BE131C6EE976E6ED8DFBDC484CD0EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B587F1E915EBFE1FD9D26DC326AE395 /* Pods-spotiflyer-ios.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-spotiflyer-ios/Pods-spotiflyer-ios-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-spotiflyer-ios/Pods-spotiflyer-ios.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0DCC66F202F182D1B0961C4AF80B209B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29BD664DE68EA93B353F338C8D5EF9EE /* ID3TagEditor.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ID3TagEditor/ID3TagEditor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ID3TagEditor/ID3TagEditor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ID3TagEditor/ID3TagEditor.modulemap";
+				PRODUCT_MODULE_NAME = ID3TagEditor;
+				PRODUCT_NAME = ID3TagEditor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -423,11 +1165,11 @@
 			};
 			name = Debug;
 		};
-		2B1077C686A789EEB2BC947C55BD70AE /* Debug */ = {
+		3FA8E92C22E7346859A342B34DC4217B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1234849CE619123773BED8E2E56F177 /* Pods-spotiflyer-ios-spotiflyer-iosUITests.debug.xcconfig */;
+			baseConfigurationReference = 8DA9378FF3B0A6B4183FF904B02C9D74 /* ID3TagEditor.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -436,7 +1178,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-spotiflyer-ios-spotiflyer-iosUITests/Pods-spotiflyer-ios-spotiflyer-iosUITests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ID3TagEditor/ID3TagEditor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ID3TagEditor/ID3TagEditor-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -444,169 +1187,20 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-spotiflyer-ios-spotiflyer-iosUITests/Pods-spotiflyer-ios-spotiflyer-iosUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/ID3TagEditor/ID3TagEditor.modulemap";
+				PRODUCT_MODULE_NAME = ID3TagEditor;
+				PRODUCT_NAME = ID3TagEditor;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		8B322BE4B4F09930F4615D42C4EBDFE0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD79E15609D5B02D1F6EECF3F78F72C8 /* Pods-spotiflyer-iosTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-spotiflyer-iosTests/Pods-spotiflyer-iosTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-spotiflyer-iosTests/Pods-spotiflyer-iosTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9BB9C3BFECA486C601B884493F237916 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 474FAA1FB7C23C8E218E74ADA7196ACD /* Pods-spotiflyer-ios.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-spotiflyer-ios/Pods-spotiflyer-ios-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-spotiflyer-ios/Pods-spotiflyer-ios.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9DF11D421EFF1C3772C215EEBB9E5520 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E772DD234DC17EB044E9966B010793F0 /* Pods-spotiflyer-ios-spotiflyer-iosUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-spotiflyer-ios-spotiflyer-iosUITests/Pods-spotiflyer-ios-spotiflyer-iosUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-spotiflyer-ios-spotiflyer-iosUITests/Pods-spotiflyer-ios-spotiflyer-iosUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B0DC6EE1F879B996C285776053976367 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C58008CEE68F91FDE9DD87640CDD4D22 /* Pods-spotiflyer-iosTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-spotiflyer-iosTests/Pods-spotiflyer-iosTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-spotiflyer-iosTests/Pods-spotiflyer-iosTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -668,11 +1262,87 @@
 			};
 			name = Release;
 		};
-		E1C2DE5B3B1D9EC5ABA7F11434ED281A /* Debug */ = {
+		7093C02129151E2D3FCEBE9CDC139EFC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 378605E67C7740F60EEFB5371DB0F390 /* Pods-spotiflyer-ios.debug.xcconfig */;
+			baseConfigurationReference = 2C56F142B3EC2D62D329CCC46513586B /* Pods-spotiflyer-iosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-spotiflyer-iosTests/Pods-spotiflyer-iosTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-spotiflyer-iosTests/Pods-spotiflyer-iosTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7E56C13AF4A3407918A4B8C682D4EC75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4188BD68D6234B100F5A8D73CAE03E63 /* Pods-spotiflyer-ios-spotiflyer-iosUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-spotiflyer-ios-spotiflyer-iosUITests/Pods-spotiflyer-ios-spotiflyer-iosUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-spotiflyer-ios-spotiflyer-iosUITests/Pods-spotiflyer-ios-spotiflyer-iosUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8CE0E5EAB935720242C0ED6768F1FF33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 854C131900A3D2F2844372BA1C4C3805 /* Pods-spotiflyer-ios.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -699,6 +1369,44 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B5A4138D001833E3AC43E95BDD56D9F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56192EAB702574C002C5E952D88C5BC1 /* Pods-spotiflyer-ios-spotiflyer-iosUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-spotiflyer-ios-spotiflyer-iosUITests/Pods-spotiflyer-ios-spotiflyer-iosUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-spotiflyer-ios-spotiflyer-iosUITests/Pods-spotiflyer-ios-spotiflyer-iosUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -707,11 +1415,29 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0DCF25F02E4FAFBFF7A09ABBF095BCD1 /* Build configuration list for PBXNativeTarget "ID3TagEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FA8E92C22E7346859A342B34DC4217B /* Debug */,
+				0DCC66F202F182D1B0961C4AF80B209B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F0E5B06EDDCF6A99F042253EB376722 /* Build configuration list for PBXNativeTarget "Pods-spotiflyer-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02BE131C6EE976E6ED8DFBDC484CD0EF /* Debug */,
+				8CE0E5EAB935720242C0ED6768F1FF33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
-				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -719,26 +1445,17 @@
 		5D1276F5242856E9E40A05FCCC2FBEE7 /* Build configuration list for PBXNativeTarget "Pods-spotiflyer-iosTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8B322BE4B4F09930F4615D42C4EBDFE0 /* Debug */,
-				B0DC6EE1F879B996C285776053976367 /* Release */,
+				7093C02129151E2D3FCEBE9CDC139EFC /* Debug */,
+				0086F7067AE689817B8BE04562805740 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		82F0106C3AB66AC9010514D3949D53ED /* Build configuration list for PBXNativeTarget "Pods-spotiflyer-ios" */ = {
+		9E214CD99DFE66C2D9A1486AF5E73755 /* Build configuration list for PBXNativeTarget "Pods-spotiflyer-ios-spotiflyer-iosUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E1C2DE5B3B1D9EC5ABA7F11434ED281A /* Debug */,
-				9BB9C3BFECA486C601B884493F237916 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A227C99641C7EE4208CE417AAAA598C5 /* Build configuration list for PBXNativeTarget "Pods-spotiflyer-ios-spotiflyer-iosUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2B1077C686A789EEB2BC947C55BD70AE /* Debug */,
-				9DF11D421EFF1C3772C215EEBB9E5520 /* Release */,
+				B5A4138D001833E3AC43E95BDD56D9F8 /* Debug */,
+				7E56C13AF4A3407918A4B8C682D4EC75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
