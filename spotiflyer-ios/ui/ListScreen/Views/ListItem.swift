@@ -55,16 +55,59 @@ struct ListItem: View {
             .padding(.trailing,8)
             .expandHorizontally()
             
-            Image("download-image")
-                .resizable()
-                .frame(width: 42, height: 42, alignment: .center)
-                .padding(.trailing,4)
-                .onTapGesture {
-                    withAnimation {
-                        onDownloadClicked(item)
+            
+            
+            switch item.downloaded {
+            case _ as DownloadStatus.Downloaded:
+                Image("check-image")
+                    .resizable()
+                    .frame(width: 32, height: 32, alignment: .center)
+                    .padding(.trailing,4)
+                    
+            case _ as DownloadStatus.NotDownloaded:
+                Image("download-image")
+                    .resizable()
+                    .frame(width: 42, height: 42, alignment: .center)
+                    .padding(.trailing,4)
+                    .onTapGesture {
+                        withAnimation {
+                            onDownloadClicked(item)
+                        }
                     }
-                }
+                
+            case _ as DownloadStatus.Queued:
+                ProgressView()
+                    .multilineTextAlignment(.center)
+                    .padding(.trailing,4)
+                    .scaleEffect(x: 2, y: 2, anchor: .center)
+                    .padding(.trailing,4)
+                
+            case _ as DownloadStatus.Converting:
+                ProgressView()
+                    .progressViewStyle(CircularProgressViewStyle(tint: Color("AccentColor")))
+                    .multilineTextAlignment(.center)
+                    .padding(.trailing,4)
+                    .scaleEffect(x: 2, y: 2, anchor: .center)
+                    .padding(.trailing,4)
+                
+            case let status as DownloadStatus.Downloading:
+                ProgressView(value: Float(truncating: NSNumber(value: status.progress)),total: 100.0)
+                    .progressViewStyle(CircularProgressViewStyle(tint: Color("PrimaryColor")))
+                        .multilineTextAlignment(.center)
+                        .padding(.trailing,4)
+                        .scaleEffect(x: 2, y: 2, anchor: .center)
+                
+            case _ as DownloadStatus.Failed:
+                Image("error-image")
+                    .resizable()
+                    .frame(width: 42, height: 42, alignment: .center)
+                    .padding(.trailing,4)
+                
+            default:
+                EmptyView()
+            }
             // Download Action Image
+            
             
             
         } // HStack
@@ -76,7 +119,7 @@ struct ListItem: View {
 struct ListItem_Previews: PreviewProvider {
     static var previews: some View {
         ListItem(
-                item: TrackDetails(title: "Song Name", artists: ["Shabinder"], durationSec: 265, albumName: "", year: "", comment: "", lyrics: "", trackUrl: "", albumArtPath: "", albumArtURL: "", source: .spotify, progress: 0, downloaded: .NotDownloaded(), outputFilePath: "", videoID: "")
+            item: TrackDetails(title: "Song Name", artists: ["Shabinder"], durationSec: 265, albumName: "", year: "", comment: "", lyrics: "", trackUrl: "", albumArtPath: "", albumArtURL: "", source: .spotify, progress: 0, downloaded: DownloadStatus.NotDownloaded(), outputFilePath: "", videoID: "")
         ) { s, closure in  } onDownloadClicked: {_ in }
                 .previewLayout(.sizeThatFits)
     }
