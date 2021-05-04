@@ -31,7 +31,7 @@ struct ListItem: View {
             // Album Art Image
 
             
-            VStack(alignment: .leading, spacing: 16){
+            VStack(alignment: .leading, spacing: 12){
                 Text(item.title)
                     .font(.title3)
                     .lineLimit(1)
@@ -42,14 +42,16 @@ struct ListItem: View {
                             .font(.subheadline)
                             .multilineTextAlignment(.leading)
                             .lineLimit(1)
-
+                        Spacer()
                         Text("\(item.durationSec / 60) min, \(item.durationSec % 60) sec")
                             .font(.subheadline)
                             .multilineTextAlignment(.trailing)
                             .lineLimit(1)
+                            
                 }// Singer & Duration HStack
             
             } // VStack
+            .padding(.trailing,8)
             .expandHorizontally()
             
             Image("download-image")
@@ -60,7 +62,7 @@ struct ListItem: View {
             
             
         } // HStack
-        .frame(minWidth: 0, idealWidth: .infinity, maxWidth: .infinity, minHeight: 0, idealHeight: 90, maxHeight: 90, alignment: .leading)
+        .frame(minWidth: 0, idealWidth: .infinity, maxWidth: .infinity, minHeight: 0, idealHeight: 80, maxHeight: 80, alignment: .leading)
         .padding(12)
     }// Body
 }
@@ -68,9 +70,8 @@ struct ListItem: View {
 struct ListItem_Previews: PreviewProvider {
     static var previews: some View {
         ListItem(
-                item: TrackDetails(title: "Song Name", artists: ["Shabinder","Shobit"], durationSec: 265, albumName: "", year: "", comment: "", lyrics: "", trackUrl: "", albumArtPath: "", albumArtURL: "", source: .spotify, progress: 0, downloaded: .NotDownloaded(), outputFilePath: "", videoID: "")
+                item: TrackDetails(title: "Song Name", artists: ["Shabinder"], durationSec: 265, albumName: "", year: "", comment: "", lyrics: "", trackUrl: "", albumArtPath: "", albumArtURL: "", source: .spotify, progress: 0, downloaded: .NotDownloaded(), outputFilePath: "", videoID: "")
         ) { s, closure in  }
-        .frame(width: 420, height: 100, alignment: .center)
                 .previewLayout(.sizeThatFits)
     }
 }

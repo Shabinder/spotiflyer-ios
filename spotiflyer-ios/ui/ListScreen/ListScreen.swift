@@ -37,7 +37,7 @@ struct ListScreen: View {
                                     .resizable()
                                     .frame(width: 160, height: 170, alignment: .center)
                                     .cornerRadius(12.0)
-                                    .padding()
+                                    .padding(.top,42)
                                     .onAppear {
                                         component.loadImage(url: result.coverUrl) { picture, error in
                                             if let pic = picture?.image {

@@ -17,7 +17,7 @@ struct HistoryItem: View {
     let trackCount: Int
     let action: () -> Void
 
-    @State var image: UIImage = UIImage.init(named: "placeholder")!
+    @State var image: UIImage = UIImage.init(named: "logo")!
 
     var body: some View {
         HStack(spacing: 8){
